@@ -28,7 +28,7 @@
         <h1 class="title title--h1 form__title">Подбор программы</h1>
         <p class="text form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="form__filter filter" action="https://echo.htmlacademy.ru/" method="get">
-          <ul class="filter__inputs">
+          <ul class="filter__block">
             <li class="filter__input input">
               <label class="input__label" for="name">ИМЯ:*</label>
               <input class="input__input" type="text" id="name" name="name" placeholder="барсик" required>
@@ -68,7 +68,7 @@
               </li>
             </ul>
           </fieldset>
-          <div class="filter__contacts-user contacts-user">
+          <div class="filter__block filter__block--contacts-user">
             <h2 class="title title--h3 filter__title">Контактные данные (владельца кота)</h2>
             <ul class="filter__inputs filter__inputs--users">
               <li class="filter__input input">
@@ -81,7 +81,7 @@
               </li>
             </ul>
           </div>
-          <div class="filter__comment comment">
+          <div class="filter__block filter__block--comment">
             <h2 class="title title--h3 filter__title">Комментарий</h2>
             <label class="visually-hidden" for="message">Введите Комментарий</label>
             <textarea class="filter__textarea input" name="message" id="message" placeholder="Расскажите обо всех повАдках кота"></textarea>
