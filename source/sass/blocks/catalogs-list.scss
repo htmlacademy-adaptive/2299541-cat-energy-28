@@ -1,0 +1,11 @@
+.catalogs-list {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalogs-list__item {
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}

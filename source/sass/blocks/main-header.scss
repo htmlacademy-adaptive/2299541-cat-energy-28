@@ -1,0 +1,26 @@
+.main-header {
+  background-color: $background-color-main;
+  padding-top: 10px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid $border-color-additional;
+}
+
+.main-header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main-header__logo {
+  display: block;
+  width: 191px;
+  height: 38px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

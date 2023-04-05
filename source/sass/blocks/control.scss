@@ -1,0 +1,32 @@
+.control {
+  display: flex;
+  align-items: center;
+}
+
+.control__label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $text-color-custom;
+  font-family: $font-main;
+}
+
+.control__mark-radio {
+  border: 1px solid $border-color;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: block;
+  margin-right: 15px;
+}
+
+.control__mark {
+  border: 1px solid $border-color;
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin-right: 15px;
+}
+

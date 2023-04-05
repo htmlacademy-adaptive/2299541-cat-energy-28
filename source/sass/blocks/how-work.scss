@@ -1,0 +1,60 @@
+.how-work {
+  margin-bottom: 49px;
+}
+
+.how-work__title {
+  margin-bottom: 40px;
+}
+
+.how-work__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.how-work__item {
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: relative;
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+    background-color: $background-color-accent;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:nth-of-type(1) {
+    &::before {
+      background-image: url("../../img/icons/icon-leaf.svg");
+    }
+  }
+
+  &:nth-of-type(2) {
+    &::before {
+      background-image: url("../../img/icons/icon-powder.svg");
+    }
+  }
+
+  &:nth-of-type(3) {
+    &::before {
+      background-image: url("../../img/icons/icon-eat.svg");
+    }
+  }
+
+  &:nth-of-type(4) {
+    &::before {
+      background-image: url("../../img/icons/icon-scales.svg");
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}

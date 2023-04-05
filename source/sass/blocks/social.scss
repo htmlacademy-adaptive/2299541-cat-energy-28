@@ -1,0 +1,22 @@
+.social {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+  border-top: 1px solid $border-color-additional;
+  border-bottom: 1px solid $border-color-additional;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.social__item {
+  margin-right: 26px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  text-decoration: none;
+}

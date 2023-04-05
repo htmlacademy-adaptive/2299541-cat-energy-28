@@ -1,0 +1,137 @@
+
+.filter__block {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 23px;
+  padding-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--custom {
+    padding-bottom: 0;
+
+    &:last-of-type {
+      margin-bottom: 19px;
+    }
+  }
+}
+
+.filter__group {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 26px;
+  padding-top: 22px;
+  padding-bottom: 18px;
+  border-top: 1px solid $border-color-additional;
+  border-bottom: 1px solid $border-color-additional;
+
+  &--custom {
+    border: none;
+    padding: 0;
+  }
+}
+
+.filter__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 13px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.filter__items {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  &--additional {
+    border: none;
+    padding: 0;
+    margin-bottom: 7px;
+  }
+}
+
+.filter__inputs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.filter__textarea {
+  border: 1px solid $border-color-custom;
+  padding: 9px 12px 9px 15px;
+  color: $text-color;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-family: $font-main;
+  height: 150px;
+  width: 100%;
+}
+
+.filter__title {
+  line-height: 1.1;
+  margin-bottom: 35px;
+
+  &--custom {
+    margin-bottom: 38px;
+  }
+}
+
+.filter__button {
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 21px;
+}
+
+.filter__text {
+  text-align: center;
+}
+
+.filter__input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+
+  &--last {
+    margin-bottom: 0;
+  }
+}
+
+.filter__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $text-color;
+  text-transform: uppercase;
+  font-family: $font-main;
+  margin-right: 13px;
+
+  &--custom {
+    margin-right: 7px;
+  }
+}
+
+.filter__input {
+  border: 1px solid $border-color-custom;
+  padding: 14px 20px 11px;
+  color: $text-color;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-family: $font-main;
+  flex-grow: 1;
+  min-width: 173px;
+}
