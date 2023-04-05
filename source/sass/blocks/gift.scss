@@ -2,7 +2,7 @@
   padding-top: 59px;
   padding-bottom: 43px;
   background-color: rgba(104, 183, 56, 0.85);
-  background-image: url("../../../img/gift.jpg");
+  background-image: url("../img/gift.jpg");
   position: relative;
   margin-bottom: 39px;
 
@@ -33,7 +33,7 @@
   &::before {
     content: "";
     position: relative;
-    background-image: url("../../../img/icons/icon-gift.svg");
+    background-image: url("../img/icons/icon-gift.svg");
     width: 78px;
     height: 80px;
     display: block;
