@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="page__header main-header">
       <div class="main-header__container container">
         <a class="main-header__logo" href="#" >
           <img src="img/icons/logo-mobile.svg" width="191" height="38" alt="Магазин «Кэт энерджи»">
@@ -20,7 +20,7 @@
               <span class="main-nav__line"></span>
               <span class="main-nav__line"></span>
             </button>
-            <ul class="main-nav__menu menu">
+            <ul class="main-nav__menu menu"><!-- что бы увидеть меню в разметку надо добавить класс show -->
               <li class="menu__item menu__item--active"><a class="menu__link" href="#">главная</a></li>
               <li class="menu__item"><a class="menu__link" href="catalog.html">каталог продукции</a></li>
               <li class="menu__item"><a class="menu__link" href="form.html">подбор программы</a></li>
@@ -29,8 +29,8 @@
         </nav>
       </div>
     </header>
-    <main class="main-container">
-      <section class="top-block">
+    <main class="page__main main-container">
+      <section class="page__top-block top-block">
         <div class="top-block__container container">
           <h1 class="title title--h1 top-block__title">Функциональное питание для котов</h1>
           <p class="text top-block__text">Занялся собой? Займись котом!</p>
@@ -40,7 +40,7 @@
           <a class="top-block__button button" href="form.html">подобрать программу</a>
         </div>
       </section>
-      <div class="catalogs-list container">
+      <div class="page__catalogs-list container catalogs-list">
         <section class="catalogs-list__item catalog-list">
           <div class="catalog-list__icon-wrapper">
             <svg class="catalog-list__icon icon" aria-hidden="true" focusable="false" width="36" height="50" viewBox="0 0 36 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -62,7 +62,7 @@
           <a class="link link--with-arrow catalog-list__link text text--big" href="catalog.html">каталог pro</a>
         </section>
       </div>
-      <section class="how-work">
+      <section class="page__how-work how-work">
         <div class="how-work__container container">
         <h2 class="title title--h2 how-work__title">Как это работает</h2>
         <ul class="how-work__items">
@@ -102,8 +102,8 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__container">
+    <footer class="page__footer footer">
+      <div class="footer__container">
         <section class="partnership container">
           <div class="partnership__container">
             <h2 class="text text--big partnership__title">приглашаем к&nbsp;сотрудничеству дилеров!</h2>
@@ -113,12 +113,12 @@
         <section class="map">
           <div class="map__container">
             <h2 class="visually-hidden">Карта</h2>
-            <div class="map-wrapper">
+            <div class="map__wrapper">
               <img class="map__image" src="img/location.jpg" alt="Магазин на карте" width="320" height="362">
             </div>
           </div>
         </section>
-        <a class="page-footer__logo" href="#">
+        <a class="footer__logo" href="#">
           <svg class="icon" aria-hidden="true" focusable="false" width="129" height="24" viewBox="0 0 129 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2.10253 22.0513C0.968358 20.3682 0.405343 18.3503 0.50003 16.3077V7.79487C0.362683 5.73031 0.890444 3.67661 2.00238 1.94872C3.1041 0.615385 4.80676 0 7.31067 0C9.81458 0 11.4171 0.615385 12.4187 1.74359C13.506 3.17255 14.0409 4.96181 13.921 6.76923V8.82051H9.01333V6.46154C9.05297 5.76385 8.95065 5.06533 8.71286 4.41026C8.58576 4.14583 8.38431 3.9264 8.13443 3.78018C7.88455 3.63395 7.59766 3.56763 7.31067 3.58974C6.60958 3.58974 6.10879 3.79487 5.90848 4.30769C5.68191 5.03643 5.58025 5.79984 5.60801 6.5641V17.5385C5.55512 18.2799 5.69327 19.0227 6.00864 19.6923C6.20895 20.2051 6.70973 20.4103 7.41083 20.4103C8.11192 20.4103 8.51255 20.2051 8.71286 19.6923C8.94058 18.9992 9.04242 18.2692 9.01333 17.5385V15.0769H13.921V17.1282C14.0229 18.9651 13.4911 20.7803 12.4187 22.2564C11.4171 23.4872 9.71443 24.1026 7.31067 24.1026C4.90692 24 3.1041 23.3846 2.10253 22.0513Z" fill="#111111"/>
             <path d="M19.8302 0.307617H25.5391L29.7457 23.6922H25.1385L24.3372 18.7692H21.0321L20.2308 23.6922H15.5235L19.8302 0.307617ZM23.9366 15.6922L22.7347 6.56403L21.5329 15.6922H23.9366Z" fill="#111111"/>
@@ -131,7 +131,7 @@
             <path d="M120.487 15.4871L115.58 0.410156H118.584L122.09 11.6922L125.495 0.410156H128.5L123.592 15.4871V23.6922H120.588V15.4871H120.487Z" fill="#111111"/>
           </svg>
         </a>
-        <ul class="page-footer__social social container">
+        <ul class="footer__social social container">
           <li class="social__item social__item--vk">
             <a class="social__link" href="https://vk.com/htmlacademy" target="_blank">
               <span class="visually-hidden">Ссылка на Вконтакте</span>
@@ -157,7 +157,7 @@
             </a>
           </li>
         </ul>
-        <div class="page-footer__academy academy container">
+        <div class="footer__academy academy container">
           <a class="link academy__link" href="https://htmlacademy.ru/">HTML Academy</a>
           <a class="academy__logo" href="https://htmlacademy.ru/" target="_blank">
             <span class="visually-hidden">Ссылка на сайт Академии</span>

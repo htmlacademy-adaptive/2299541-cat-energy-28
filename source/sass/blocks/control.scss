@@ -11,6 +11,10 @@
   text-transform: uppercase;
   color: $text-color-custom;
   font-family: $font-main;
+
+  &--custom {
+    color: $text-color-additional;
+  }
 }
 
 .control__mark-radio {

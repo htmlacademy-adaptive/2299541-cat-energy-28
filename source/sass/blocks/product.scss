@@ -48,6 +48,7 @@
     position: relative;
     margin-bottom: 10px;
     max-width: unset;
+    color: $text-color-secondary;
 
     &::before {
       content: "";

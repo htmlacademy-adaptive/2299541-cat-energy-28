@@ -1,6 +1,11 @@
-@import "blocks/variabel.scss";
+@import "general/fonts.scss";
+@import "general/variabel.scss";
 @import "blocks/container.scss";
-@import "blocks/general.scss";
+@import "general/general.scss";
+@import "general/page.scss";
+@import "general/text.scss";
+@import "general/button.scss";
+@import "general/title.scss";
 @import "blocks/main-header.scss";
 @import "blocks/menu";
 @import "blocks/main-nav";
@@ -10,7 +15,7 @@
 @import "blocks/how-work";
 @import "blocks/live-example";
 @import "blocks/slider";
-@import "blocks/page-footer";
+@import "blocks/footer";
 @import "blocks/partnership";
 @import "blocks/social.scss";
 @import "blocks/academy.scss";
