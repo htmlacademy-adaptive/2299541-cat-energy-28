@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/oswald/oswaldmedium.woff2") format("woff2"), url("../fonts/oswald/oswaldmedium.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2"), url("../fonts/oswald/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2"), url("../fonts/lato/Lato-Regular.woff") format("woff");
+  font-display: swap;
+}
 .container {
   display: block;
   min-width: 280px;
@@ -6,29 +27,11 @@
   margin: 0 auto;
 }
 
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/oswald/oswaldmedium.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
-  font-display: swap;
-}
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  font-weight: 400;
 }
 
 .visually-hidden {
@@ -48,32 +51,32 @@
 .page__body {
   margin: 0;
   padding: 0;
-}
-
-.title {
-  display: block;
-  margin: 0;
-  padding: 0;
   font-weight: 400;
   font-family: "Oswald", sans-serif;
 }
 
-.title--h1 {
-  font-size: 36px;
-  line-height: 1;
-  color: #ffffff;
+.page__top-block {
+  margin-bottom: 20px;
 }
 
-.title--h2 {
-  font-size: 36px;
-  line-height: 1.1;
-  color: #000000;
+.page__catalogs-list {
+  margin-bottom: 20px;
 }
 
-.title--h3 {
-  font-size: 24px;
-  line-height: 1.5;
-  color: #000000;
+.page__how-work {
+  margin-bottom: 49px;
+}
+
+.page__additionally {
+  margin-bottom: 36px;
+}
+
+.page__gift {
+  margin-bottom: 39px;
+}
+
+.page__form {
+  margin-bottom: 32px;
 }
 
 .text {
@@ -114,12 +117,30 @@
   border: none;
 }
 
-.additionally-wrapper {
-  margin-bottom: 35px;
+.title {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
 }
 
-.gift-wrapper {
-  margin-bottom: 39px;
+.title--h1 {
+  font-size: 36px;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.title--h2 {
+  font-size: 36px;
+  line-height: 1.1;
+  color: #000000;
+}
+
+.title--h3 {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #000000;
 }
 
 .main-header {
@@ -149,22 +170,34 @@
 
 .menu {
   display: none;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 66px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #ffffff;
 }
 .menu.show {
   display: flex;
-  flex-direction: column;
-  list-style: none;
 }
 
 .menu__link {
   display: block;
   margin: 0;
-  padding: 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
   color: #000000;
   text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  padding: 22px 22px 24px 22px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .main-nav__toggle {
@@ -200,7 +233,6 @@
 }
 
 .top-block {
-  margin-bottom: 20px;
   padding-top: 27px;
   position: relative;
   background-color: rgba(104, 183, 56, 0.85);
@@ -251,11 +283,13 @@
 }
 
 .catalogs-list {
-  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
 
+.catalogs-list__item {
+  margin-bottom: 20px;
+}
 .catalogs-list__item:last-of-type {
   margin-bottom: 0;
 }
@@ -264,7 +298,6 @@
   display: grid;
   background-color: #eaeaea;
   padding: 21px 22px;
-  margin-bottom: 20px;
   align-items: start;
   grid-template-columns: 70px auto;
 }
@@ -333,10 +366,6 @@
   height: 12px;
   display: block;
   margin-left: 15px;
-}
-
-.how-work {
-  margin-bottom: 49px;
 }
 
 .how-work__title {
@@ -442,14 +471,14 @@
   padding: 0;
 }
 
-.page-footer__container {
+.footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
 
-.page-footer__logo {
+.footer__logo {
   padding-top: 36px;
   padding-bottom: 15px;
 }
@@ -471,7 +500,7 @@
   line-height: 1.25;
   color: #111111;
   display: block;
-  margin-right: 10px;
+  margin-right: 18px;
 }
 
 .partnership__text {
@@ -578,6 +607,7 @@
   position: relative;
   margin-bottom: 10px;
   max-width: unset;
+  color: #111111;
 }
 .product__name--more::before {
   content: "";
@@ -666,7 +696,6 @@
   background-color: rgba(104, 183, 56, 0.85);
   background-image: url("../img/gift.jpg");
   position: relative;
-  margin-bottom: 39px;
 }
 .gift::before {
   content: "";
@@ -703,7 +732,6 @@
 
 .form {
   padding-top: 28px;
-  margin-bottom: 32px;
 }
 
 .form__title {
@@ -715,13 +743,18 @@
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   margin-bottom: 39px;
+  color: #000000;
+}
+
+.form__filter {
+  margin-bottom: 23px;
 }
 
 .filter__block {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
   padding-bottom: 22px;
 }
 .filter__block:last-child {
@@ -806,6 +839,7 @@
 
 .filter__text {
   text-align: center;
+  color: #000000;
 }
 
 .filter__input-wrapper {
@@ -858,6 +892,9 @@
   text-transform: uppercase;
   color: #222222;
   font-family: "Oswald", sans-serif;
+}
+.control__label--custom {
+  color: #000000;
 }
 
 .control__mark-radio {
