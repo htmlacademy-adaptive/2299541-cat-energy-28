@@ -1,0 +1,36 @@
+.addition {
+  border-top: 1px solid $border-color-secondary;
+  padding-top: 12px;
+  padding-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.addition__button {
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.addition__name {
+  line-height: 1.25;
+  color: $text-color-custom;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 9px;
+}
+
+.addition__link {
+  text-decoration: none;
+}
+
+.addition__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.addition__price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}

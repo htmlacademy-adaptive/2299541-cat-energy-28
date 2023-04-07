@@ -1,0 +1,21 @@
+.text {
+  font-size: 14px;
+  line-height: 1.28;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-family: $font-secondary;
+}
+
+.text--big {
+  font-size: 16px;
+  line-height: 1;
+  color: $text-color-additional;
+  font-family: $font-main;
+}
+
+.text--small {
+  font-size: 12px;
+  line-height: 1;
+}

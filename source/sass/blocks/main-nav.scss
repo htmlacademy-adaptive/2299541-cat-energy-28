@@ -1,0 +1,36 @@
+.main-nav__toggle {
+  display: block;
+  position: absolute;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 16px;
+  border: none;
+  background-color: unset;
+  padding: 0;
+  top: 30px;
+  right: 19px;
+
+  &.show {
+    &:nth-child(1) {
+      transform: translateY(3px) rotate(-45deg);
+    }
+
+    &:nth-child(2) {
+      display: none;
+    }
+
+    &:nth-child(3) {
+      transform: translateY(3px) rotate(45deg);
+    }
+  }
+}
+
+.main-nav__line {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: $background-color-main;
+  margin-bottom: 6px;
+  transition: 0.5s all;
+  border: 1.5px solid $border-color-accent;
+}

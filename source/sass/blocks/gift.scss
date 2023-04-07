@@ -1,0 +1,41 @@
+.gift {
+  padding-top: 59px;
+  padding-bottom: 43px;
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url("../img/gift.jpg");
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(104, 183, 56, 0.85);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+
+.gift__title {
+  color: $text-color-accent;
+  line-height: 1.25;
+  font-family: $font-secondary;
+  font-weight: 400;
+  text-align: center;
+  max-width: 161px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: relative;
+    background-image: url("../img/icons/icon-gift.svg");
+    width: 78px;
+    height: 80px;
+    display: block;
+    margin-bottom: 48px;
+  }
+}
