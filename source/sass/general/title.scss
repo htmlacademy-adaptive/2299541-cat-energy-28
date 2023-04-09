@@ -23,3 +23,19 @@
   line-height: 1.5;
   color: $text-color-additional;
 }
+
+@media (min-width: $tablet) {
+  .title--h1 {
+    font-size: 60px;
+  }
+
+  .title--h2 {
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .title--h3 {
+    font-size: 36px;
+    line-height: 1;
+  }
+}

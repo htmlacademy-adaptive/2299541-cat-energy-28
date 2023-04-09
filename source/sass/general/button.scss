@@ -4,7 +4,7 @@
   color: $text-color-accent;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.28;
   text-align: center;
   text-transform: uppercase;
   padding: 10px 44px;
@@ -12,4 +12,13 @@
   font-family: $font-main;
   width: 100%;
   border: none;
+}
+
+@media (min-width: $tablet) {
+  .button {
+    font-size: 20px;
+    line-height: 1;
+    padding: 17px 28px;
+    width: fit-content;
+  }
 }

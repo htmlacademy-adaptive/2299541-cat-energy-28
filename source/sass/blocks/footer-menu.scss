@@ -1,0 +1,21 @@
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $tablet) {
+  .footer-menu {
+    flex-direction: row;
+    width: 708px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $dekstop) {
+  .footer-menu {
+    width: 1219px;
+  }
+}

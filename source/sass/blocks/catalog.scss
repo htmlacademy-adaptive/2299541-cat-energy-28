@@ -9,3 +9,22 @@
   padding: 0;
   list-style: none;
 }
+
+@media (min-width: 768px) {
+  .catalog__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 66px 60px;
+  }
+
+  .catalog__title {
+    margin-bottom: 90px;
+  }
+}
+
+@media (min-width: $dekstop) {
+  .catalog__items {
+    gap: 73px 79px;
+  }
+}

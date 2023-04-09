@@ -11,3 +11,17 @@
 .additionally__title {
   margin-bottom: 29px;
 }
+
+@media (min-width: $tablet) {
+  .additionally {
+    padding-top: 0;
+  }
+
+  .additionally__title {
+    margin-bottom: 80px;
+  }
+
+  .additionally__items {
+    padding: 0;
+  }
+}

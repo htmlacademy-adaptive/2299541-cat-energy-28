@@ -3,6 +3,8 @@
   padding-bottom: 43px;
   background-color: rgba(104, 183, 56, 0.85);
   background-image: url("../img/gift.jpg");
+  background-repeat: repeat;
+  background-size: cover;
   position: relative;
 
   &::before {
@@ -37,5 +39,48 @@
     height: 80px;
     display: block;
     margin-bottom: 48px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .gift {
+    padding: 60px 124px 60px 77px;
+  }
+
+  .gift__title {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: none;
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+
+    &::before {
+      margin-bottom: 0;
+    }
+  }
+
+  .gift__text {
+    max-width: 161px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $dekstop) {
+  .gift {
+    width: 245px;
+    padding: 55px 40px 42px;
+  }
+
+  .gift__title {
+    flex-direction: column;
+
+    &::before {
+      margin-bottom: 50px;
+    }
+  }
+
+  .gift__text {
+    text-align: center;
   }
 }

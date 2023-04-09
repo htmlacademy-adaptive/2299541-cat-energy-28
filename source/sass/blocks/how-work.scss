@@ -54,3 +54,39 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $tablet) {
+  .how-work__title {
+    margin-bottom: 72px;
+  }
+
+  .how-work__items {
+    display: grid;
+    grid-template-columns: 245px 245px;
+    gap: 114px 139px;
+  }
+
+  .how-work__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 31px;
+    }
+  }
+}
+
+@media (min-width: $dekstop) {
+  .how-work__items {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .how-work__item {
+    margin-bottom: 0;
+    width: 230px;
+  }
+}

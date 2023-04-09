@@ -17,3 +17,36 @@
 .form__filter {
   margin-bottom: 23px;
 }
+
+@media (min-width: $tablet) {
+  .form__container {
+    padding-left: 39px;
+  }
+
+  .form__title {
+    margin-bottom: 55px;
+  }
+
+  .form__text {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 65px;
+  }
+
+  .form__filter {
+    padding-left: 69px;
+    padding-right: 69px;
+  }
+}
+
+@media (min-width: $dekstop) {
+  .form__container {
+    padding-left: 0;
+  }
+
+  .form__filter {
+    padding-left: 111px;
+    padding-right: 111px;
+    margin-bottom: 83px;
+  }
+}

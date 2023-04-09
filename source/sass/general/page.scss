@@ -28,3 +28,82 @@
 .page__form {
   margin-bottom: 32px;
 }
+
+@media (min-width: $tablet) {
+  .page__main {
+    padding-top: 35px;
+  }
+
+  .page__top-block {
+    margin-bottom: 0;
+  }
+
+  .page__catalogs-list {
+    margin-bottom: 47px;
+  }
+
+  .page__how-work {
+    margin-bottom: 83px;
+  }
+
+  .page__catalog {
+    margin-bottom: 68px;
+  }
+
+  .page__additionally {
+    margin-bottom: 68px;
+  }
+
+  .page__gift {
+    margin-bottom: 76px;
+  }
+}
+
+@media (min-width: $dekstop) {
+  .page__main {
+    padding-top: 52px;
+
+    &--catalog {
+      display: grid;
+      grid-template-columns: 895px auto;
+      margin-bottom: 86px;
+    }
+  }
+
+  .page__body {
+    padding-top: 55px;
+  }
+
+  .page__top-block {
+    margin-bottom: 82px;
+  }
+
+  .page__catalogs-list {
+    margin-bottom: 72px;
+  }
+
+  .page__how-work {
+    margin-bottom: 59px;
+  }
+
+  .page__catalog {
+    margin-bottom: 76px;
+    grid-row: 1;
+    grid-column: 1/3;
+  }
+
+  .page__additionally {
+    grid-row: 2;
+    grid-column: 1;
+    margin-bottom: 0;
+    margin-right: 80px;
+  }
+
+  .page__gift {
+    grid-row: 2;
+    grid-column: 2;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-top: auto;
+  }
+}

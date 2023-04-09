@@ -21,3 +21,43 @@
 .partnership__text {
   line-height: 1.37;
 }
+
+@media (min-width: $tablet) {
+  .partnership {
+    padding-top: 61px;
+    padding-bottom: 63px;
+  }
+
+  .partnership__container {
+    padding-left: 56px;
+    padding-right: 23px;
+  }
+
+  .partnership__title {
+    max-width: 172px;
+  }
+
+  .partnership__text {
+    max-width: 160px;
+    text-align: right;
+    line-height: 1.25;
+  }
+}
+
+
+@media (min-width: $dekstop) {
+  .partnership {
+    width: 565px;
+    margin-left: 110px;
+    margin-top: 95px;
+  }
+
+  .partnership__container {
+    padding-left: 79px;
+    padding-right: 76px;
+  }
+
+  .partnership__text {
+    text-align: left;
+  }
+}

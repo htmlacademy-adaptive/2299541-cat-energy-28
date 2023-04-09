@@ -33,3 +33,22 @@
   display: block;
   margin-right: 15px;
 }
+
+@media (min-width: $tablet) {
+  .control__label {
+    font-size: 20px;
+    line-height: 1.45;
+  }
+
+  .control__mark-radio {
+    width: 40px;
+    height: 40px;
+    margin-right: 22px;
+  }
+
+  .control__mark {
+    width: 40px;
+    height: 40px;
+    margin-right: 22px;
+  }
+}
