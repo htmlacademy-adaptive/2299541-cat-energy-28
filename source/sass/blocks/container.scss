@@ -4,18 +4,12 @@
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-}
-
-@media (min-width: $tablet) {
-  .container {
-    width: 708px;
-    padding: 0;
-  }
+  max-width: 1219px;
+  width: 100%;
 }
 
 @media (min-width: $dekstop) {
   .container {
-    width: 1219px;
     padding: 0;
   }
 }

@@ -76,6 +76,42 @@
       height: 80px;
       margin-bottom: 31px;
     }
+
+    &::after {
+      position: absolute;
+      right: -11px;
+      top: -40px;
+      color: $background-color-special;
+      font-family: $font-main;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 1;
+      z-index: -1;
+    }
+
+    &:nth-of-type(1) {
+      &::after {
+        content: "1";
+      }
+    }
+
+    &:nth-of-type(2) {
+      &::after {
+        content: "2";
+      }
+    }
+
+    &:nth-of-type(3) {
+      &::after {
+        content: "3";
+      }
+    }
+
+    &:nth-of-type(4) {
+      &::after {
+        content: "4";
+      }
+    }
   }
 }
 

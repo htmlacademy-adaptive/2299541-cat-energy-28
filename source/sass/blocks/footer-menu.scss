@@ -2,13 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media (min-width: $tablet) {
   .footer-menu {
     flex-direction: row;
-    width: 708px;
-    padding: 0;
+    max-width: 1219px;
+    padding: 50px 20px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -16,6 +19,7 @@
 
 @media (min-width: $dekstop) {
   .footer-menu {
-    width: 1219px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

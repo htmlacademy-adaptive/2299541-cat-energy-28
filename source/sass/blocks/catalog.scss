@@ -11,6 +11,11 @@
 }
 
 @media (min-width: 768px) {
+  .catalog__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .catalog__items {
     display: flex;
     flex-direction: row;
@@ -24,6 +29,11 @@
 }
 
 @media (min-width: $dekstop) {
+  .catalog__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .catalog__items {
     gap: 73px 79px;
   }

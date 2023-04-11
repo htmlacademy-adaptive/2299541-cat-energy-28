@@ -34,8 +34,10 @@
   }
 
   .form__filter {
-    padding-left: 69px;
-    padding-right: 69px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 280px;
+    width: 100%;
   }
 }
 
@@ -45,8 +47,8 @@
   }
 
   .form__filter {
-    padding-left: 111px;
-    padding-right: 111px;
+    padding-left: 0;
+    padding-right: 0;
     margin-bottom: 83px;
   }
 }

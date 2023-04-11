@@ -23,7 +23,7 @@
   max-width: 124px;
   border: 1px solid $border-color;
   border-radius: 3px;
-  padding: 6px 20px 12px;
+  padding: 6px 6px 12px;
   position: relative;
   text-align: center;
 }
@@ -41,7 +41,6 @@
   width: 60%;
   line-height: 1;
   top: 45px;
-  white-space: nowrap;
 }
 
 .live-example__result {
@@ -91,6 +90,9 @@
   .live-example__description {
     font-size: 14px;
     top: 62px;
+    width: 100%;
+    left: 0;
+    white-space: nowrap;
   }
 
   .live-example__subtitle {

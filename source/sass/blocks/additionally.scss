@@ -22,6 +22,18 @@
   }
 
   .additionally__items {
-    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 68px;
+  }
+}
+
+@media (min-width: $dekstop) {
+  .additionally {
+    width: 100%;
+  }
+
+  .additionally__items {
+    margin-bottom: 0;
   }
 }

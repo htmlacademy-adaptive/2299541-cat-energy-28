@@ -2,9 +2,11 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 17px;
   padding-bottom: 47px;
   align-items: center;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .academy__link {
@@ -14,4 +16,12 @@
   color: $text-color;
   font-family: $font-secondary;
   text-decoration: none;
+}
+
+@media (min-width: $tablet) {
+  .academy {
+    padding: 0;
+    margin-left: auto;
+    justify-content: end;
+  }
 }
