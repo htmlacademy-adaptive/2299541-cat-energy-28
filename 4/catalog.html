@@ -30,9 +30,9 @@
         </nav>
       </div>
     </header>
-    <main class="page__main page__main--catalog main-container container">
+    <main class="page__main page__main--catalog main-container">
       <section class="page__catalog catalog">
-        <div class="catalog__container">
+        <div class="catalog__container container">
           <h1 class="title title--h1 catalog__title">Каталог продукции</h1>
           <ul class="catalog__items">
             <li class="catalog__item product">
@@ -157,67 +157,77 @@
           </ul>
         </div>
       </section>
-      <section class="page__additionally">
+      <div class="page__additionally">
         <div class="additionally">
-          <h2 class="title title--h3 additionally__title">Дополнительные товары</h2>
-          <ul class="additionally__items">
-            <li class="additionally__item addition">
-              <a class="addition__link" href="#">
-                <h3 class="text text--big addition__name">Сахарозаменитель</h3>
-              </a>
-              <div class="addition__price">
-                <p class="text addition__about">1 упаковка (100 г)</p>
-                <p class="text addition__about">200 ₽</p>
-              </div>
-              <a class="addition__button button" href="#">заказать</a>
-            </li>
-            <li class="additionally__item addition">
-              <a class="addition__link" href="#">
-                <h3 class="text text--big addition__name">питьевая вода</h3>
-              </a>
-              <div class="addition__price">
-                <p class="text addition__about">5 литров</p>
-                <p class="text addition__about">50 ₽</p>
-              </div>
-              <a class="addition__button button" href="#">заказать</a>
-            </li>
-            <li class="additionally__item addition">
-              <a class="addition__link" href="#">
-                <h3 class="text text--big addition__name">молоко</h3>
-              </a>
-              <div class="addition__price">
-                <p class="text addition__about">1 литр</p>
-                <p class="text addition__about">100 ₽</p>
-              </div>
-              <a class="addition__button button" href="#">заказать</a>
-            </li>
-            <li class="additionally__item addition">
-              <a class="addition__link" href="#">
-                <h3 class="text text--big addition__name">витамины</h3>
-              </a>
-              <div class="addition__price">
-                <p class="text addition__about">1 упаковка (30 г)</p>
-                <p class="text addition__about">300 ₽</p>
-              </div>
-              <a class="addition__button button" href="#">заказать</a>
-            </li>
-          </ul>
+          <div class="additionally__title-wrapper title-wrapper">
+            <div class="container">
+              <h2 class="title title--h3 additionally__title">Дополнительные товары</h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="page__wrapper">
+              <ul class="additionally__items">
+                <li class="additionally__item addition">
+                  <a class="addition__link" href="#">
+                    <h3 class="text text--big addition__name">Сахарозаменитель</h3>
+                  </a>
+                  <div class="addition__price">
+                    <p class="text addition__about">1 упаковка (100 г)</p>
+                    <p class="text addition__about">200 ₽</p>
+                  </div>
+                  <a class="addition__button button" href="#">заказать</a>
+                </li>
+                <li class="additionally__item addition">
+                  <a class="addition__link" href="#">
+                    <h3 class="text text--big addition__name">питьевая вода</h3>
+                  </a>
+                  <div class="addition__price">
+                    <p class="text addition__about">5 литров</p>
+                    <p class="text addition__about">50 ₽</p>
+                  </div>
+                  <a class="addition__button button" href="#">заказать</a>
+                </li>
+                <li class="additionally__item addition">
+                  <a class="addition__link" href="#">
+                    <h3 class="text text--big addition__name">молоко</h3>
+                  </a>
+                  <div class="addition__price">
+                    <p class="text addition__about">1 литр</p>
+                    <p class="text addition__about">100 ₽</p>
+                  </div>
+                  <a class="addition__button button" href="#">заказать</a>
+                </li>
+                <li class="additionally__item addition">
+                  <a class="addition__link" href="#">
+                    <h3 class="text text--big addition__name">витамины</h3>
+                  </a>
+                  <div class="addition__price">
+                    <p class="text addition__about">1 упаковка (30 г)</p>
+                    <p class="text addition__about">300 ₽</p>
+                  </div>
+                  <a class="addition__button button" href="#">заказать</a>
+                </li>
+              </ul>
+              <section class="page__gift">
+                <div class="gift">
+                  <h2 class="gift__title text text--big"><span class="gift__text">Закажите все и&nbsp;получите чехол для кота в подарок!</span></h2>
+                </div>
+              </section>
+            </div>
+          </div>
         </div>
-      </section>
-      <section class="page__gift">
-        <div class="gift">
-          <h2 class="gift__title text text--big"><span class="gift__text">Закажите все и&nbsp;получите чехол для кота в подарок!</span></h2>
-        </div>
-      </section>
+      </div>
     </main>
     <footer class="page__footer footer">
       <div class="footer__container">
-        <section class="footer__parthership partnership  container">
-          <div class="partnership__container">
-            <h2 class="text text--big partnership__title">приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-            <p class="text partnership__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          </div>
-        </section>
+        <div class="container">
+          <section class="footer__parthership partnership">
+            <div class="partnership__container">
+              <h2 class="text text--big partnership__title">приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+              <p class="text partnership__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            </div>
+          </section>
+        </div>
         <section class="footer__map map">
           <div class="map__container">
             <h2 class="visually-hidden">Карта</h2>
