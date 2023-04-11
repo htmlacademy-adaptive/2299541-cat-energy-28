@@ -28,8 +28,8 @@
     position: relative;
     width: 50px;
     height: 50px;
-    left: 1px;
-    top: 4px;
+    // left: 1px;
+    // top: 4px;
     border-radius: 50%;
     background-color: $background-color-accent;
     z-index: 0;
@@ -111,7 +111,7 @@
     &::before {
       width: 200px;
       height: 200px;
-      top: 15px;
+      // top: 15px;
     }
   }
 
@@ -131,7 +131,7 @@
 
 @media (min-width: $dekstop) {
   .catalog-list {
-    padding: 47px 61px 59px 52px;
+    padding: 38px 61px 59px 52px;
     max-width: 570px;
     grid-template-columns: 162px auto;
     align-items: center;
@@ -145,8 +145,8 @@
     &::before {
       width: 100px;
       height: 100px;
-      top: 0;
-      left: 0;
+      // top: 0;
+      // left: 0;
     }
   }
 
