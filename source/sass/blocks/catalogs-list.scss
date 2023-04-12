@@ -10,3 +10,28 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $tablet) {
+  .catalogs-list__item {
+    margin-bottom: 33px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .catalog-list__icon-wrapper {
+    margin-top: 14px;
+  }
+}
+
+@media (min-width: $dekstop) {
+  .catalogs-list {
+    flex-direction: row;
+    gap: 0 80px;
+  }
+
+  .catalogs-list__item {
+    margin-bottom: 0;
+  }
+}

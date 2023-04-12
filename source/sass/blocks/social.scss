@@ -6,11 +6,11 @@
   border-top: 1px solid $border-color-additional;
   border-bottom: 1px solid $border-color-additional;
   padding-top: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 }
 
 .social__item {
-  margin-right: 26px;
+  margin-right: 23px;
 
   &:last-of-type {
     margin-right: 0;
@@ -19,4 +19,11 @@
 
 .social__link {
   text-decoration: none;
+}
+
+@media (min-width: $tablet) {
+  .social {
+    padding: 0;
+    border: none;
+  }
 }

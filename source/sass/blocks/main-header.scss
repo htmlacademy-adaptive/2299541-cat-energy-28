@@ -24,3 +24,20 @@
     opacity: 0.6;
   }
 }
+
+@media (min-width: $tablet) {
+  .main-header {
+    border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .main-header__container {
+    align-items: end;
+  }
+
+  .main-header__logo {
+    width: 174px;
+    height: 52px;
+  }
+}

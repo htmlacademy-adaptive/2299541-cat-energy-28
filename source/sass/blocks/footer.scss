@@ -7,5 +7,49 @@
 
 .footer__logo {
   padding-top: 36px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
+}
+
+@media (min-width: 768px) {
+  // .footer__container {
+  //   display: flex;
+  // }
+
+  // .footer__parthership {
+  //   grid-row: 1;
+  // }
+
+  // .footer__map {
+  //   grid-row: 2;
+  // }
+
+  .footer__logo {
+    width: 142px;
+    height: 26px;
+    padding: 0;
+  }
+
+  // .footer__social {
+  //   grid-row: 3;
+  // }
+
+  // .footer__academy {
+  //   grid-row: 3;
+  // }
+}
+
+@media (min-width: $dekstop) {
+  .footer__parthership {
+    z-index: 1;
+    background-color: $background-color-main;
+    position: absolute;
+  }
+
+  .footer__map {
+    margin-bottom: 28px;
+  }
+
+  .footer__container {
+    align-items: unset;
+  }
 }

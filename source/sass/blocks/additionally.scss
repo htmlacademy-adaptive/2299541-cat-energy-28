@@ -11,3 +11,29 @@
 .additionally__title {
   margin-bottom: 29px;
 }
+
+@media (min-width: $tablet) {
+  .additionally {
+    padding-top: 0;
+  }
+
+  .additionally__title {
+    margin-bottom: 80px;
+  }
+
+  .additionally__items {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 68px;
+  }
+}
+
+@media (min-width: $dekstop) {
+  .additionally {
+    width: 100%;
+  }
+
+  .additionally__items {
+    margin-bottom: 0;
+  }
+}
