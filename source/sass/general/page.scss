@@ -10,7 +10,7 @@
 }
 
 .page__catalogs-list {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .page__how-work {
@@ -21,17 +21,17 @@
   margin-bottom: 36px;
 }
 
-.page__gift {
-  margin-bottom: 39px;
-}
-
 .page__form {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet) {
   .page__main {
-    padding-top: 35px;
+    padding-top: 36px;
+
+    &--index {
+      padding-top: 38px;
+    }
   }
 
   .page__top-block {
@@ -55,23 +55,53 @@
   }
 
   .page__gift {
-    margin-bottom: 0;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-bottom: 76px;
+  }
+
+  .page__form {
+    margin-bottom: 72px;
   }
 }
 
 @media (min-width: $dekstop) {
   .page__main {
     padding-top: 52px;
+
+    &--catalog {
+      padding-top: 47px;
+    }
+
+    &--index {
+      padding-top: 28px;
+    }
   }
 
   .page__body {
     padding-top: 55px;
+
+    &--index {
+      position: relative;
+      background-image: url("../img/index-bg-dekstop.jpg");
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: 50vw 694px;
+
+      &::after {
+        position: absolute;
+        width: 50vw;
+        height: 694px;
+        background-color: $background-color-accent;
+        content: "";
+        top: 0;
+        right: 0;
+        opacity: 0.85;
+        z-index: 0;
+      }
+    }
   }
 
   .page__top-block {
-    margin-bottom: 82px;
+    margin-bottom: 51px;
   }
 
   .page__catalogs-list {
@@ -79,7 +109,11 @@
   }
 
   .page__how-work {
-    margin-bottom: 59px;
+    margin-bottom: 82px;
+  }
+
+  .page__live-example {
+    margin-bottom: 68px;
   }
 
   .page__catalog {
@@ -94,13 +128,14 @@
     margin-right: auto;
 
     &--form {
-      margin-bottom: 50px;
+      margin-bottom: 69px;
+      flex-wrap: wrap;
+      gap: 30px 79px;
     }
   }
 
   .page__additionally {
-    margin-bottom: 55px;
-    width: 100%;
+    margin-bottom: 11px;
   }
 
   .page__gift {

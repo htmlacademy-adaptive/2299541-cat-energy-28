@@ -28,7 +28,8 @@
 @media (min-width: $dekstop) {
   .catalogs-list {
     flex-direction: row;
-    gap: 0 80px;
+    gap: 20px 80px;
+    flex-wrap: wrap;
   }
 
   .catalogs-list__item {

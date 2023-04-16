@@ -1,7 +1,7 @@
 .catalog__title {
   color: $text-color-additional;
   padding-top: 27px;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 }
 
 .catalog__items {
@@ -20,11 +20,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 66px 60px;
+    gap: 140px 60px;
   }
 
   .catalog__title {
-    margin-bottom: 90px;
+    margin-bottom: 163px;
   }
 }
 
@@ -35,6 +35,10 @@
   }
 
   .catalog__items {
-    gap: 73px 79px;
+    gap: 143px 80px;
+  }
+
+  .catalog__title {
+    margin-bottom: 165px;
   }
 }

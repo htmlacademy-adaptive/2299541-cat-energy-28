@@ -1,7 +1,6 @@
 .main-header {
-  background-color: $background-color-main;
-  padding-top: 10px;
-  padding-bottom: 17px;
+  padding-top: 12px;
+  padding-bottom: 15px;
   border-bottom: 1px solid $border-color-additional;
 }
 
@@ -11,7 +10,7 @@
   justify-content: space-between;
 }
 
-.main-header__logo {
+.main-header__picture {
   display: block;
   width: 191px;
   height: 38px;
@@ -36,8 +35,19 @@
     align-items: end;
   }
 
-  .main-header__logo {
+  .main-header__picture {
     width: 174px;
     height: 52px;
+  }
+}
+
+@media (min-width: $dekstop) {
+  .main-header__picture {
+    width: 202px;
+    height: 59px;
+  }
+
+  .main-header__container {
+    align-items: unset;
   }
 }
