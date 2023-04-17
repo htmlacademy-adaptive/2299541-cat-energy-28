@@ -1,5 +1,6 @@
 .social {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   width: 100%;
   justify-content: center;
@@ -19,6 +20,23 @@
 
 .social__link {
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    .social__icon path {
+      fill: $background-color-accent;
+    }
+  }
+
+  &:active {
+    .social__icon {
+      opacity: 0.3;
+    }
+
+    .social__icon path {
+      fill: $background-color-accent;
+    }
+  }
 }
 
 @media (min-width: $tablet) {

@@ -4,8 +4,15 @@
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-  max-width: 1219px;
+  max-width: 1220px;
   width: 100%;
+}
+
+@media (min-width: $tablet) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 @media (min-width: $dekstop) {

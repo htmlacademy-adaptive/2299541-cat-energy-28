@@ -1,18 +1,111 @@
-.slider__items {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.slider {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.slider__container {
+  position: relative;
+  margin: 0 auto;
+  width: 280px;
+}
+
+.slider__slide {
+  background-color: $background-color-additional;
+}
+
+.slider__slide--before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 50%;
+  z-index: 2;
+  max-width: 280px;
+}
+
+.slider__slide--after {
+  height: 100%;
+  width: 100%;
+}
+
+.slider__change {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: $background-color-dark;
+  z-index: 3;
+  border-radius: 2px;
+
+  &:hover {
+    background-color: $background-color-accent;
+    stroke: $background-color-accent;
+
+    .slider__icon {
+      stroke: $background-color-accent;
+    }
+
+    .slider__icon path {
+      fill: $background-color-accent;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+    background-color: $background-color-accent;
+
+    .slider__icon {
+      stroke: $background-color-accent;
+    }
+
+    .slider__icon path {
+      fill: $background-color-accent;
+    }
+  }
+}
+
+.slider__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+}
+
+.slider__image-wrapper {
+  display: block;
+  max-width: 280px;
+  height: 256px;
 }
 
 @media (min-width: $tablet) {
-  .slider__image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  .slider__container {
+    height: 512px;
+    width: 560px;
   }
 
-  .slider__item {
-    width: 560px;
+  .slider__image-wrapper {
+    display: block;
+    max-width: 560px;
     height: 512px;
+  }
+
+  .slider__slide--before {
+    max-width: 560px;
+  }
+
+  .slider__slide {
+    background-image: linear-gradient($background-color-main 152px, $background-color-additional 152px, $background-color-additional 90%);
+  }
+}
+
+@media (min-width: $dekstop) {
+  .slider__slide {
+    background-image: none;
+    background-color: $background-color-main;
   }
 }

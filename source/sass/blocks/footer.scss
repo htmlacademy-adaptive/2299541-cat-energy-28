@@ -1,41 +1,46 @@
+.footer {
+  background-color: $background-color-special;
+}
+
 .footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+
+  &--index {
+    background-color: $background-color-main;
+  }
 }
 
 .footer__logo {
   padding-top: 36px;
-  padding-bottom: 13px;
+  padding-bottom: 19px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__picture {
+  display: block;
 }
 
 @media (min-width: 768px) {
-  // .footer__container {
-  //   display: flex;
-  // }
-
-  // .footer__parthership {
-  //   grid-row: 1;
-  // }
-
-  // .footer__map {
-  //   grid-row: 2;
-  // }
-
   .footer__logo {
-    width: 142px;
-    height: 26px;
     padding: 0;
+    margin-right: 20px;
   }
 
-  // .footer__social {
-  //   grid-row: 3;
-  // }
-
-  // .footer__academy {
-  //   grid-row: 3;
-  // }
+  .footer__picture {
+    width: 143px;
+    height: 27px;
+  }
 }
 
 @media (min-width: $dekstop) {
@@ -43,10 +48,6 @@
     z-index: 1;
     background-color: $background-color-main;
     position: absolute;
-  }
-
-  .footer__map {
-    margin-bottom: 28px;
   }
 
   .footer__container {

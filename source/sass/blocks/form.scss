@@ -20,7 +20,8 @@
 
 @media (min-width: $tablet) {
   .form__container {
-    padding-left: 39px;
+    padding-left: 69px;
+    padding-right: 69px;
   }
 
   .form__title {
@@ -42,8 +43,13 @@
 }
 
 @media (min-width: $dekstop) {
+  .form {
+    padding-top: 21px;
+  }
+
   .form__container {
     padding-left: 0;
+    padding-right: 0;
   }
 
   .form__filter {

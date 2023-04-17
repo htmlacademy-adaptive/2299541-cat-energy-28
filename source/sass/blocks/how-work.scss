@@ -79,7 +79,7 @@
 
     &::after {
       position: absolute;
-      right: -11px;
+      right: -3px;
       top: -40px;
       color: $background-color-special;
       font-family: $font-main;
@@ -92,6 +92,7 @@
     &:nth-of-type(1) {
       &::after {
         content: "1";
+        right: 18px;
       }
     }
 
@@ -119,10 +120,11 @@
   .how-work__items {
     display: flex;
     flex-direction: row;
+    gap: 30px 80px;
   }
 
   .how-work__item {
     margin-bottom: 0;
-    width: 230px;
+    width: 245px;
   }
 }

@@ -1,3 +1,14 @@
+
+.main-nav__line {
+  display: block;
+  height: 2px;
+  width: 24px;
+  background-color: $background-color-main;
+  margin-bottom: 6px;
+  transition: 0.5s all;
+  border: 1.5px solid $border-color-accent;
+}
+
 .main-nav__toggle {
   display: block;
   position: absolute;
@@ -11,28 +22,18 @@
   right: 19px;
 
   &.show {
-    &:nth-child(1) {
-      transform: translateY(3px) rotate(-45deg);
+    .main-nav__line:nth-last-of-type(1) {
+      transform: translateY(1px) rotate(-45deg);
     }
 
-    &:nth-child(2) {
+    .main-nav__line:nth-last-of-type(2) {
       display: none;
     }
 
-    &:nth-child(3) {
-      transform: translateY(3px) rotate(45deg);
+    .main-nav__line:nth-last-of-type(3) {
+      transform: translateY(9px) rotate(45deg);
     }
   }
-}
-
-.main-nav__line {
-  display: block;
-  height: 2px;
-  width: 100%;
-  background-color: $background-color-main;
-  margin-bottom: 6px;
-  transition: 0.5s all;
-  border: 1.5px solid $border-color-accent;
 }
 
 @media (min-width: $tablet) {

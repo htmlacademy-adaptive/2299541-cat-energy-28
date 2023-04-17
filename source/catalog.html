@@ -10,7 +10,11 @@
     <header class="page__header main-header">
       <div class="main-header__container container">
         <a class="main-header__logo" href="index.html" >
-          <img src="img/icons/logo-mobile.svg" width="191" height="38" alt="Магазин «Кэт энерджи»">
+          <picture class="main-header__picture">
+            <source srcset="img/icons/logo-desktop.svg" media="(min-width: 1440px)">
+            <source srcset="img/icons/logo-tablet.svg" media="(min-width: 768px)">
+            <img class="main-header__image" src="img/icons/logo-mobile.svg" alt="Магазин «Кэт энерджи»">
+          </picture>
         </a>
         <nav class="main-nav">
           <div class="main-nav__container">
@@ -35,8 +39,11 @@
           <h1 class="title title--h1 catalog__title">Каталог продукции</h1>
           <ul class="catalog__items">
             <li class="catalog__item product">
-              <a class="product__link" href="#">
-                <img class="product__image" src="img/catalog/product-1.png" alt="Корм Cat Energy PRO Курица 500 г." width="140" height="112">
+              <a class="product__link product__link--image" href="#">
+                <picture class="product__picture">
+                  <source srcset="img/catalog/product-1-dekstop.png" media="(min-width: 768px)">
+                  <img class="product__image image" src="img/catalog/product-1.png" alt="Корм Cat Energy PRO Курица 500 г.">
+                </picture>
               </a>
               <div class="product__about">
                 <a class="product__link" href="#">
@@ -51,8 +58,11 @@
               <a class="product__button button" href="#">заказать</a>
             </li>
             <li class="catalog__item product">
-              <a class="product__link" href="#">
-                <img class="product__image" src="img/catalog/product-2.png" alt="Корм Cat Energy PRO Курица 1000 г." width="140" height="112">
+              <a class="product__link product__link--image" href="#">
+                <picture class="product__picture">
+                  <source srcset="img/catalog/product-2-dekstop.png" media="(min-width: 768px)">
+                  <img class="product__image image" src="img/catalog/product-2.png" alt="Корм Cat Energy PRO Курица 1000 г.">
+                </picture>
               </a>
               <div class="product__about">
                 <a class="product__link" href="#">
@@ -67,8 +77,11 @@
               <a class="product__button button" href="#">заказать</a>
             </li>
             <li class="catalog__item product">
-              <a class="product__link" href="#">
-                <img class="product__image" src="img/catalog/product-3.png" alt="Корм Cat Energy PRO Рыба 500 г." width="140" height="112">
+              <a class="product__link product__link--image" href="#">
+                <picture class="product__picture">
+                  <source srcset="img/catalog/product-3-dekstop.png" media="(min-width: 768px)">
+                  <img class="product__image image" src="img/catalog/product-3.png" alt="Корм Cat Energy PRO Рыба 500 г.">
+                </picture>
               </a>
               <div class="product__about">
                 <a class="product__link" href="#">
@@ -83,8 +96,11 @@
               <a class="product__button button" href="#">заказать</a>
             </li>
             <li class="catalog__item product">
-              <a class="product__link" href="#">
-                <img class="product__image" src="img/catalog/product-4.png" alt="Корм Cat Energy PRO Рыба 1000 г." width="140" height="112">
+              <a class="product__link product__link--image" href="#">
+                <picture class="product__picture">
+                  <source srcset="img/catalog/product-4-dekstop.png" media="(min-width: 768px)">
+                  <img class="product__image image" src="img/catalog/product-4.png" alt="Корм Cat Energy PRO Рыба 1000 г.">
+                </picture>
               </a>
               <div class="product__about">
                 <a class="product__link" href="#">
@@ -99,8 +115,11 @@
               <a class="product__button button" href="#">заказать</a>
             </li>
             <li class="catalog__item product">
-              <a class="product__link" href="#">
-                <img class="product__image" src="img/catalog/product-5.png" alt="Корм Cat Energy slim Гречка 500 г." width="140" height="112">
+              <a class="product__link product__link--image" href="#">
+                <picture class="product__picture">
+                  <source srcset="img/catalog/product-5-dekstop.png" media="(min-width: 768px)">
+                  <img class="product__image image" src="img/catalog/product-5.png" alt="Корм Cat Energy slim Гречка 500 г.">
+                </picture>
               </a>
               <div class="product__about">
                 <a class="product__link" href="#">
@@ -115,8 +134,11 @@
               <a class="product__button button" href="#">заказать</a>
             </li>
             <li class="catalog__item product">
-              <a class="product__link" href="#">
-                <img class="product__image" src="img/catalog/product-6.png" alt="Корм Cat Energy slim Гречка 1000 г." width="140" height="112">
+              <a class="product__link product__link--image" href="#">
+                <picture class="product__picture">
+                  <source srcset="img/catalog/product-6-dekstop.png" media="(min-width: 768px)">
+                  <img class="product__image image" src="img/catalog/product-6.png" alt="Корм Cat Energy slim Гречка 1000 г.">
+                </picture>
               </a>
               <div class="product__about">
                 <a class="product__link" href="#">
@@ -131,8 +153,11 @@
               <a class="product__button button" href="#">заказать</a>
             </li>
             <li class="catalog__item product">
-              <a class="product__link" href="#">
-                <img class="product__image" src="img/catalog/product-7.png" alt="Корм Cat Energy slim Рис 500 г." width="140" height="112">
+              <a class="product__link product__link--image" href="#">
+                <picture class="product__picture">
+                  <source srcset="img/catalog/product-7-dekstop.png" media="(min-width: 768px)">
+                  <img class="product__image image" src="img/catalog/product-7.png" alt="Корм Cat Energy slim Рис 500 г.">
+                </picture>
               </a>
               <div class="product__about">
                 <a class="product__link" href="#">
@@ -223,31 +248,31 @@
           <section class="footer__parthership partnership">
             <div class="partnership__container">
               <h2 class="text text--big partnership__title">приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-              <p class="text partnership__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+              <p class="text partnership__text">ул. Большая Конюшенная, д. 19/8 <span class="text partnership__text partnership__text--custom">Санкт-Петербург</span></p>
             </div>
           </section>
         </div>
         <section class="footer__map map">
           <div class="map__container">
             <h2 class="visually-hidden">Карта</h2>
-            <div class="map__wrapper">
-              <img class="map__image" src="img/location.jpg" alt="Магазин на карте" width="320" height="362">
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1160726408207!2d30.317857323536607!3d59.939475593588824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1681412831212!5m2!1sru!2sru"
+              width="1440"
+              height="400"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"
+              class="map__iframe">
+            </iframe>
           </div>
         </section>
         <div class="footer__menu footer-menu">
           <a class="footer__logo" href="#">
-            <svg class="icon" aria-hidden="true" focusable="false" width="129" height="24" viewBox="0 0 129 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2.10253 22.0513C0.968358 20.3682 0.405343 18.3503 0.50003 16.3077V7.79487C0.362683 5.73031 0.890444 3.67661 2.00238 1.94872C3.1041 0.615385 4.80676 0 7.31067 0C9.81458 0 11.4171 0.615385 12.4187 1.74359C13.506 3.17255 14.0409 4.96181 13.921 6.76923V8.82051H9.01333V6.46154C9.05297 5.76385 8.95065 5.06533 8.71286 4.41026C8.58576 4.14583 8.38431 3.9264 8.13443 3.78018C7.88455 3.63395 7.59766 3.56763 7.31067 3.58974C6.60958 3.58974 6.10879 3.79487 5.90848 4.30769C5.68191 5.03643 5.58025 5.79984 5.60801 6.5641V17.5385C5.55512 18.2799 5.69327 19.0227 6.00864 19.6923C6.20895 20.2051 6.70973 20.4103 7.41083 20.4103C8.11192 20.4103 8.51255 20.2051 8.71286 19.6923C8.94058 18.9992 9.04242 18.2692 9.01333 17.5385V15.0769H13.921V17.1282C14.0229 18.9651 13.4911 20.7803 12.4187 22.2564C11.4171 23.4872 9.71443 24.1026 7.31067 24.1026C4.90692 24 3.1041 23.3846 2.10253 22.0513Z" fill="#111111"/>
-              <path d="M19.8302 0.307617H25.5391L29.7457 23.6922H25.1385L24.3372 18.7692H21.0321L20.2308 23.6922H15.5235L19.8302 0.307617ZM23.9366 15.6922L22.7347 6.56403L21.5329 15.6922H23.9366Z" fill="#111111"/>
-              <path d="M33.2512 4.20505H29.8458V0.307617H41.7645V4.10249H38.3591V23.6922H33.2512V4.20505Z" fill="#111111"/>
-              <path d="M50.8787 0.307617H59.6925V2.76916H53.9836V10.4615H58.5908V12.8204H53.9836V21.4358H59.6925V23.7948H50.7786V0.307617H50.8787Z" fill="#111111"/>
-              <path d="M62.2966 0.307617H64.5L71.0102 15.7948V0.307617H73.6142V23.6922H71.6111L65.0008 7.69223V23.6922H62.2966V0.307617Z" fill="#111111"/>
-              <path d="M76.6189 0.307617H85.4327V2.76916H79.7238V10.4615H84.331V12.8204H79.7238V21.4358H85.4327V23.7948H76.6189V0.307617Z" fill="#111111"/>
-              <path d="M88.0368 0.3076H92.644C94.4564 0.179397 96.2575 0.685711 97.7519 1.7435C98.8537 2.66657 99.3544 4.3076 99.3544 6.46145C99.3544 9.4358 98.453 11.282 96.5501 11.8973L99.7551 23.5897H96.6502L93.6455 12.6153H91.1416V23.5897H87.9366V0.3076H88.0368ZM92.4437 10.3589C93.4762 10.446 94.5053 10.1553 95.3482 9.53837C95.9491 9.02555 96.2496 7.99991 96.2496 6.46145C96.2774 5.69719 96.1757 4.93378 95.9491 4.20504C95.7237 3.68211 95.3366 3.24964 94.8474 2.97427C94.1576 2.65236 93.4003 2.51137 92.644 2.56401H91.2418V10.2563H92.4437V10.3589Z" fill="#111111"/>
-              <path d="M103.361 21.9487C102.32 20.1554 101.831 18.0821 101.959 15.9999V8.20507C101.934 6.71875 102.102 5.23567 102.459 3.79481C102.794 2.71811 103.462 1.78218 104.362 1.12815C105.481 0.450275 106.771 0.128917 108.068 0.20507C110.171 0.20507 111.674 0.71789 112.575 1.8461C113.612 3.33582 114.108 5.14977 113.977 6.9743V7.79481H110.973V7.07687C110.977 6.21789 110.91 5.36008 110.772 4.51276C110.688 3.97732 110.4 3.49792 109.971 3.17943C109.408 2.80104 108.74 2.62099 108.068 2.66661C107.35 2.61949 106.639 2.83785 106.065 3.28199C105.829 3.48529 105.637 3.73569 105.499 4.01787C105.361 4.30004 105.281 4.60805 105.264 4.92302C105.132 5.83993 105.065 6.76543 105.063 7.69225V16.4102C104.99 17.7384 105.194 19.0674 105.664 20.3076C106.065 21.1281 106.866 21.4358 108.068 21.4358C108.543 21.4964 109.024 21.4119 109.452 21.1929C109.88 20.9739 110.234 20.6302 110.472 20.2051C111.001 18.9081 111.241 17.5064 111.173 16.1025V14.4615H108.268V12.1025H114.077V23.6923H112.074L111.774 21.0256C111.511 21.9193 110.965 22.6975 110.22 23.2364C109.476 23.7753 108.578 24.0441 107.667 23.9999C106.84 24.0498 106.013 23.8885 105.261 23.5304C104.51 23.1724 103.857 22.6289 103.361 21.9487Z" fill="#111111"/>
-              <path d="M120.487 15.4871L115.58 0.410156H118.584L122.09 11.6922L125.495 0.410156H128.5L123.592 15.4871V23.6922H120.588V15.4871H120.487Z" fill="#111111"/>
-            </svg>
+            <picture class="footer__picture">
+              <source srcset="img/icons/footer-logo-tablet.svg" media="(min-width: 768px)">
+              <img class="footer__image" src="img/icons/footer-logo-mobile.svg" alt="Магазин «Кэт энерджи»">
+            </picture>
           </a>
           <ul class="footer__social social container">
             <li class="social__item social__item--vk">
@@ -276,10 +301,8 @@
             </li>
           </ul>
           <div class="footer__academy academy container">
-            <a class="link academy__link" href="https://htmlacademy.ru/">HTML Academy</a>
-            <a class="academy__logo" href="https://htmlacademy.ru/" target="_blank">
-              <span class="visually-hidden">Ссылка на сайт Академии</span>
-              <svg class="academy__icon icon" aria-hidden="true" focusable="false" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="link academy__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy
+              <svg class="academy__icon" aria-hidden="true" focusable="false" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
               </svg>
             </a>

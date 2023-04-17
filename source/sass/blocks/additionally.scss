@@ -6,10 +6,14 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 36px;
 }
 
 .additionally__title {
   margin-bottom: 29px;
+  box-shadow: -10px 0 0 $background-color-main, 22px 0 0 $background-color-main;
+  background-color: $background-color-main;
+  display: inline-block;
 }
 
 @media (min-width: $tablet) {
@@ -19,11 +23,17 @@
 
   .additionally__title {
     margin-bottom: 80px;
+    padding-left: 37px;
+    box-shadow: 0 0 0 $background-color-main, 35px 0 0 $background-color-main;
+  }
+
+  .additionally__title-wrapper {
+    &::before {
+      top: 23px;
+    }
   }
 
   .additionally__items {
-    padding-left: 10px;
-    padding-right: 10px;
     margin-bottom: 68px;
   }
 }
@@ -35,5 +45,11 @@
 
   .additionally__items {
     margin-bottom: 0;
+    width: 73.4%;
+  }
+
+  .additionally__title {
+    padding-left: 0;
+    box-shadow: -39px 0 0 $background-color-main, 34px 0 0 $background-color-main;
   }
 }

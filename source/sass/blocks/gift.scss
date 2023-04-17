@@ -3,7 +3,7 @@
   padding-bottom: 43px;
   background-color: rgba(104, 183, 56, 0.85);
   background-image: url("../img/gift.jpg");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
@@ -45,6 +45,7 @@
 @media (min-width: $tablet) {
   .gift {
     padding: 60px 124px 60px 77px;
+    background-position-y: 59%;
   }
 
   .gift__title {

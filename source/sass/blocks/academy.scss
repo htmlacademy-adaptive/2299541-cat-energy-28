@@ -1,10 +1,7 @@
 .academy {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
-  padding-top: 17px;
+  padding-top: 19px;
   padding-bottom: 47px;
-  align-items: center;
   padding-left: 0;
   padding-right: 0;
 }
@@ -16,12 +13,47 @@
   color: $text-color;
   font-family: $font-secondary;
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    .academy__icon path {
+      fill: $background-color-accent;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .academy__icon path {
+      fill: $background-color-accent;
+    }
+  }
+}
+
+.academy__icon {
+  margin-top: 3px;
 }
 
 @media (min-width: $tablet) {
   .academy {
     padding: 0;
     margin-left: auto;
-    justify-content: end;
+    justify-content: flex-end;
+    min-width: unset;
+    width: 315px;
+  }
+
+  .academy__icon {
+    margin-left: 28px;
+    margin-top: 1px;
+  }
+}
+
+@media (min-width: $dekstop) {
+  .academy {
+    width: 230px;
   }
 }

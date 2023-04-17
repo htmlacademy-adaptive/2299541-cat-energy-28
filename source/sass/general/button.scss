@@ -12,6 +12,15 @@
   font-family: $font-main;
   width: 100%;
   border: none;
+
+  &:hover {
+    background-color: $background-color-accent-hover;
+  }
+
+  &:active {
+    background-color: $background-color-accent-hover;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet) {

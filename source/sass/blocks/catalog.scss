@@ -1,13 +1,17 @@
 .catalog__title {
   color: $text-color-additional;
   padding-top: 27px;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 }
 
 .catalog__items {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 20px;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -20,11 +24,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 66px 60px;
+    gap: 140px 60px;
   }
 
   .catalog__title {
-    margin-bottom: 90px;
+    margin-bottom: 163px;
   }
 }
 
@@ -35,6 +39,10 @@
   }
 
   .catalog__items {
-    gap: 73px 79px;
+    gap: 143px 80px;
+  }
+
+  .catalog__title {
+    margin-bottom: 165px;
   }
 }

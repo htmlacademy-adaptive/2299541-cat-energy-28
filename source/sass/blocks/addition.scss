@@ -1,7 +1,7 @@
 .addition {
   border-top: 1px solid $border-color-secondary;
   padding-top: 12px;
-  padding-bottom: 18px;
+  padding-bottom: 17px;
   display: flex;
   flex-direction: column;
 }
@@ -32,7 +32,7 @@
 .addition__price {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 }
 
 @media (min-width: $tablet) {
@@ -43,6 +43,7 @@
     border: 1px solid $border-color;
     border-bottom: unset;
     margin-bottom: 0;
+    align-items: center;
 
     &:last-of-type {
       border-bottom: 1px solid $border-color;
@@ -57,9 +58,10 @@
   .addition__price {
     grid-row: 1;
     grid-column: 2;
-    gap: 0 49px;
+    gap: 0 52px;
     justify-content: end;
     margin-bottom: 0;
+    margin-top: 5px;
   }
 
   .addition__button {
@@ -71,6 +73,10 @@
 
   .addition__name {
     margin-bottom: 0;
+  }
+
+  .addition__about {
+    line-height: 1.25;
   }
 }
 
@@ -87,5 +93,13 @@
 
   .addition__button {
     width: 244px;
+    margin-left: 20px;
+  }
+
+  .addition__price {
+    gap: unset;
+    justify-content: space-between;
+    width: 284px;
+    margin-left: auto;
   }
 }

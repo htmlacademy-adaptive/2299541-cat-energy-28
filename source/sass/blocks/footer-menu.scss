@@ -10,8 +10,8 @@
 @media (min-width: $tablet) {
   .footer-menu {
     flex-direction: row;
-    max-width: 1219px;
-    padding: 50px 20px;
+    max-width: 1220px;
+    padding: 49px 30px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -19,7 +19,6 @@
 
 @media (min-width: $dekstop) {
   .footer-menu {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 62px 0;
   }
 }
