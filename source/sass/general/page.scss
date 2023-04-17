@@ -81,10 +81,6 @@
 
     &--index {
       position: relative;
-      background-image: url("../img/index-bg-dekstop.jpg");
-      background-position: top right;
-      background-repeat: no-repeat;
-      background-size: 50vw 694px;
 
       &::after {
         position: absolute;
@@ -95,6 +91,20 @@
         top: 0;
         right: 0;
         opacity: 0.85;
+        z-index: 0;
+      }
+
+      &::before {
+        position: absolute;
+        width: 50vw;
+        height: 694px;
+        background-image: url("../img/index-bg-dekstop.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        content: "";
+        top: 0;
+        right: 0;
         z-index: 0;
       }
     }

@@ -7,6 +7,10 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+
+  &--index {
+    background-color: $background-color-main;
+  }
 }
 
 .footer__logo {
@@ -44,10 +48,6 @@
     z-index: 1;
     background-color: $background-color-main;
     position: absolute;
-  }
-
-  .footer__map {
-    margin-bottom: 28px;
   }
 
   .footer__container {

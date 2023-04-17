@@ -1,9 +1,12 @@
 .product {
   border-top: 1px solid $border-color-secondary;
-  justify-content: start;
+  justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 24px;
   display: grid;
+  align-items: center;
+  max-width: 320px;
+  width: 100%;
 
   &--more {
     display: flex;
