@@ -140,10 +140,6 @@
   }
   .page__body--index {
     position: relative;
-    background-image: url("../img/index-bg-dekstop.jpg");
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 50vw 694px;
   }
   .page__body--index::after {
     position: absolute;
@@ -154,6 +150,19 @@
     top: 0;
     right: 0;
     opacity: 0.85;
+    z-index: 0;
+  }
+  .page__body--index::before {
+    position: absolute;
+    width: 50vw;
+    height: 694px;
+    background-image: url("../img/index-bg-dekstop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    top: 0;
+    right: 0;
     z-index: 0;
   }
 
@@ -444,6 +453,7 @@
     text-align: right;
     letter-spacing: -0.6px;
     border: none;
+    font-weight: 400;
   }
 }
 @media (min-width: 1440px) {
@@ -698,7 +708,7 @@
 }
 .catalog-list {
   display: grid;
-  background-color: #eaeaea;
+  background-color: #f2f2f2;
   padding: 21px 22px;
   align-items: start;
   grid-template-columns: 70px auto;
@@ -1294,6 +1304,9 @@
   align-items: center;
   width: 100%;
 }
+.footer__container--index {
+  background-color: #ffffff;
+}
 
 .footer__logo {
   padding-top: 36px;
@@ -1326,10 +1339,6 @@
     z-index: 1;
     background-color: #ffffff;
     position: absolute;
-  }
-
-  .footer__map {
-    margin-bottom: 28px;
   }
 
   .footer__container {
@@ -1458,7 +1467,7 @@
 }
 @media (min-width: 1440px) {
   .footer-menu {
-    padding: 36px 0;
+    padding: 62px 0;
   }
 }
 .social {
@@ -1561,6 +1570,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 20px;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -1596,10 +1609,13 @@
 }
 .product {
   border-top: 1px solid #ebebeb;
-  justify-content: start;
+  justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 24px;
   display: grid;
+  align-items: center;
+  max-width: 320px;
+  width: 100%;
 }
 .product--more {
   display: flex;
