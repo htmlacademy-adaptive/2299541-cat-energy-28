@@ -14,6 +14,7 @@
     left: 50%;
     z-index: 1;
     transform: translate(-50%, -50%);
+    background-size: contain;
   }
 }
 
@@ -21,6 +22,12 @@
   width: 100%;
   height: 362px;
   border: none;
+}
+
+@media (min-resolution: 2dppx) {
+  .map::after {
+    background-image: url("../img/map-icon-mobile-2x.png");
+  }
 }
 
 @media (min-width: 768px) {
@@ -33,6 +40,12 @@
       background-image: url("../img/map-icon-tablet.png");
       width: 113px;
       height: 106px;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .map::after {
+      background-image: url("../img/map-icon-tablet-2x.png");
     }
   }
 }

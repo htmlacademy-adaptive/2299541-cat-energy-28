@@ -1,12 +1,11 @@
 .product {
   border-top: 1px solid $border-color-secondary;
   justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 24px;
   display: grid;
   align-items: center;
   max-width: 320px;
   width: 100%;
+  padding: 20px 20px 24px;
 
   &--more {
     display: flex;

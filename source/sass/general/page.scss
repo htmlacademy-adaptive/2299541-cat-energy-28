@@ -39,7 +39,7 @@
   }
 
   .page__catalogs-list {
-    margin-bottom: 47px;
+    margin-bottom: 46px;
   }
 
   .page__how-work {
@@ -122,10 +122,6 @@
     margin-bottom: 82px;
   }
 
-  .page__live-example {
-    margin-bottom: 68px;
-  }
-
   .page__catalog {
     margin-bottom: 76px;
     grid-row: 1;
@@ -151,5 +147,11 @@
   .page__gift {
     margin-left: auto;
     margin-top: auto;
+  }
+
+  @media (min-resolution: 2dppx) {
+    .page__body--index::before {
+      background-image: url("../img/index-bg-dekstop-2x.jpg");
+    }
   }
 }

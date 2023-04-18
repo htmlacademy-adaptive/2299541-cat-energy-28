@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи - Каталог</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="page__header main-header">
       <div class="main-header__container container">
         <a class="main-header__logo" href="index.html" >
-          <picture class="main-header__picture">
-            <source srcset="img/icons/logo-desktop.svg" media="(min-width: 1440px)">
-            <source srcset="img/icons/logo-tablet.svg" media="(min-width: 768px)">
-            <img class="main-header__image" src="img/icons/logo-mobile.svg" alt="Магазин «Кэт энерджи»">
-          </picture>
+          <p class="main-header__picture">
+            <picture>
+              <source srcset="img/icons/logo-desktop.svg" media="(min-width: 1440px)">
+              <source srcset="img/icons/logo-tablet.svg" media="(min-width: 768px)">
+              <img class="main-header__image" src="img/icons/logo-mobile.svg" alt="Магазин «Кэт энерджи»">
+            </picture>
+          </p>
         </a>
         <nav class="main-nav">
           <div class="main-nav__container">
@@ -40,10 +45,12 @@
           <ul class="catalog__items">
             <li class="catalog__item product">
               <a class="product__link product__link--image" href="#">
-                <picture class="product__picture">
-                  <source srcset="img/catalog/product-1-dekstop.png" media="(min-width: 768px)">
-                  <img class="product__image image" src="img/catalog/product-1.png" alt="Корм Cat Energy PRO Курица 500 г.">
-                </picture>
+                <p class="product__picture">
+                  <picture>
+                    <source srcset="img/catalog/product-1-dekstop.png 1x, img/catalog/product-1-dekstop-2x.png 2x" media="(min-width: 768px)">
+                    <img class="product__image image" src="img/catalog/product-1.png" srcset="img/catalog/product-1-2x.png 2x" alt="Корм Cat Energy PRO Курица 500 г.">
+                  </picture>
+                </p>
               </a>
               <div class="product__about">
                 <a class="product__link" href="#">
@@ -59,10 +66,12 @@
             </li>
             <li class="catalog__item product">
               <a class="product__link product__link--image" href="#">
-                <picture class="product__picture">
-                  <source srcset="img/catalog/product-2-dekstop.png" media="(min-width: 768px)">
-                  <img class="product__image image" src="img/catalog/product-2.png" alt="Корм Cat Energy PRO Курица 1000 г.">
-                </picture>
+                <p class="product__picture">
+                  <picture>
+                    <source srcset="img/catalog/product-2-dekstop.png 1x, img/catalog/product-2-dekstop-2x.png 2x" media="(min-width: 768px)">
+                    <img class="product__image image" src="img/catalog/product-2.png" srcset="img/catalog/product-2-2x.png 2x" alt="Корм Cat Energy PRO Курица 1000 г.">
+                  </picture>
+                </p>
               </a>
               <div class="product__about">
                 <a class="product__link" href="#">
@@ -78,10 +87,12 @@
             </li>
             <li class="catalog__item product">
               <a class="product__link product__link--image" href="#">
-                <picture class="product__picture">
-                  <source srcset="img/catalog/product-3-dekstop.png" media="(min-width: 768px)">
-                  <img class="product__image image" src="img/catalog/product-3.png" alt="Корм Cat Energy PRO Рыба 500 г.">
-                </picture>
+                <p class="product__picture">
+                  <picture>
+                    <source srcset="img/catalog/product-3-dekstop.png 1x, img/catalog/product-3-dekstop-2x.png 2x" media="(min-width: 768px)">
+                    <img class="product__image image" src="img/catalog/product-3.png" src="img/catalog/product-3-2x.png 2x" alt="Корм Cat Energy PRO Рыба 500 г.">
+                  </picture>
+                </p>
               </a>
               <div class="product__about">
                 <a class="product__link" href="#">
@@ -97,10 +108,12 @@
             </li>
             <li class="catalog__item product">
               <a class="product__link product__link--image" href="#">
-                <picture class="product__picture">
-                  <source srcset="img/catalog/product-4-dekstop.png" media="(min-width: 768px)">
-                  <img class="product__image image" src="img/catalog/product-4.png" alt="Корм Cat Energy PRO Рыба 1000 г.">
-                </picture>
+                <p class="product__picture">
+                  <picture>
+                    <source srcset="img/catalog/product-4-dekstop.png 1x, img/catalog/product-4-dekstop-2x.png 2x" media="(min-width: 768px)">
+                    <img class="product__image image" src="img/catalog/product-4.png" srcset="img/catalog/product-4-2x.png 2x" alt="Корм Cat Energy PRO Рыба 1000 г.">
+                  </picture>
+                </p>
               </a>
               <div class="product__about">
                 <a class="product__link" href="#">
@@ -116,10 +129,12 @@
             </li>
             <li class="catalog__item product">
               <a class="product__link product__link--image" href="#">
-                <picture class="product__picture">
-                  <source srcset="img/catalog/product-5-dekstop.png" media="(min-width: 768px)">
-                  <img class="product__image image" src="img/catalog/product-5.png" alt="Корм Cat Energy slim Гречка 500 г.">
-                </picture>
+                <p class="product__picture">
+                  <picture>
+                    <source srcset="img/catalog/product-5-dekstop.png 1x, img/catalog/product-5-dekstop-2x.png 2x" media="(min-width: 768px)">
+                    <img class="product__image image" src="img/catalog/product-5.png" srcset="img/catalog/product-5-2x.png 2x" alt="Корм Cat Energy slim Гречка 500 г.">
+                  </picture>
+                </p>
               </a>
               <div class="product__about">
                 <a class="product__link" href="#">
@@ -135,10 +150,12 @@
             </li>
             <li class="catalog__item product">
               <a class="product__link product__link--image" href="#">
-                <picture class="product__picture">
-                  <source srcset="img/catalog/product-6-dekstop.png" media="(min-width: 768px)">
-                  <img class="product__image image" src="img/catalog/product-6.png" alt="Корм Cat Energy slim Гречка 1000 г.">
-                </picture>
+                <p class="product__picture">
+                  <picture>
+                    <source srcset="img/catalog/product-6-dekstop.png 1x, img/catalog/product-6-dekstop-2x.png 2x" media="(min-width: 768px)">
+                    <img class="product__image image" src="img/catalog/product-6.png" src="img/catalog/product-6-2x.png 2x" alt="Корм Cat Energy slim Гречка 1000 г.">
+                  </picture>
+                </p>
               </a>
               <div class="product__about">
                 <a class="product__link" href="#">
@@ -154,10 +171,12 @@
             </li>
             <li class="catalog__item product">
               <a class="product__link product__link--image" href="#">
-                <picture class="product__picture">
-                  <source srcset="img/catalog/product-7-dekstop.png" media="(min-width: 768px)">
-                  <img class="product__image image" src="img/catalog/product-7.png" alt="Корм Cat Energy slim Рис 500 г.">
-                </picture>
+                <p class="product__picture">
+                  <picture>
+                    <source srcset="img/catalog/product-7-dekstop.png 1x, img/catalog/product-7-dekstop.png 2x" media="(min-width: 768px)">
+                    <img class="product__image image" src="img/catalog/product-7.png" srcset="img/catalog/product-7.png 2x" alt="Корм Cat Energy slim Рис 500 г.">
+                  </picture>
+                </p>
               </a>
               <div class="product__about">
                 <a class="product__link" href="#">
@@ -269,10 +288,12 @@
         </section>
         <div class="footer__menu footer-menu">
           <a class="footer__logo" href="#">
-            <picture class="footer__picture">
-              <source srcset="img/icons/footer-logo-tablet.svg" media="(min-width: 768px)">
-              <img class="footer__image" src="img/icons/footer-logo-mobile.svg" alt="Магазин «Кэт энерджи»">
-            </picture>
+            <p class="footer__picture">
+              <picture>
+                <source srcset="img/icons/footer-logo-tablet.svg" media="(min-width: 768px)">
+                <img class="footer__image" src="img/icons/footer-logo-mobile.svg" alt="Магазин «Кэт энерджи»">
+              </picture>
+            </p>
           </a>
           <ul class="footer__social social container">
             <li class="social__item social__item--vk">

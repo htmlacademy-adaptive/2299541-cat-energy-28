@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body page__body--index">
     <header class="page__header main-header">
       <div class="main-header__container container">
         <a class="main-header__logo" href="#" >
-          <picture class="main-header__picture">
-            <source srcset="img/icons/logo-desktop.svg" media="(min-width: 1440px)">
-            <source srcset="img/icons/logo-tablet.svg" media="(min-width: 768px)">
-            <img class="main-header__image image" src="img/icons/logo-mobile.svg" alt="Магазин «Кэт энерджи»">
-          </picture>
+          <p class="main-header__picture">
+            <picture>
+              <source srcset="img/icons/logo-desktop.svg" media="(min-width: 1440px)">
+              <source srcset="img/icons/logo-tablet.svg" media="(min-width: 768px)">
+              <img class="main-header__image image" src="img/icons/logo-mobile.svg" alt="Магазин «Кэт энерджи»">
+            </picture>
+          </p>
         </a>
         <nav class="main-nav">
           <div class="main-nav__container">
@@ -38,11 +43,13 @@
         <div class="top-block__container container">
           <h1 class="title title--h1 top-block__title">Функциональное питание для котов</h1>
           <p class="text top-block__text">Занялся собой? Займись котом!</p>
-          <picture class="top-block__image-wrapper">
-            <source srcset="img/index-can.png" media="(min-width: 1440px)">
-            <source srcset="img/index-can-tablet.png" media="(min-width: 768px)">
-            <img class="top-block__image image" src="img/index-can-mobile.png" alt="Функциональное питание для котов.">
-          </picture>
+          <p class="top-block__image-wrapper">
+            <picture>
+              <source srcset="img/index-can.png 1x, img/index-can-2x.png 2x" media="(min-width: 1440px)">
+              <source srcset="img/index-can-tablet.png 1x, img/index-can-tablet-2x.png 2x" media="(min-width: 768px)">
+              <img class="top-block__image image" src="img/index-can-mobile.png" srcset="img/index-can-mobile-2x.png 2x" alt="Функциональное питание для котов.">
+            </picture>
+          </p>
           <a class="top-block__button button" href="form.html">подобрать программу</a>
         </div>
       </section>
@@ -102,16 +109,20 @@
         <div class="live-example__slider slider" id="slider">
           <div class="slider__container">
             <div class="slider__slide slider__slide--before">
-              <picture class="slider__image-wrapper before">
-                <source srcset="img/slider/cat-fat.png" media="(min-width: 768px)">
-                <img class="image" src="img/slider/cat-fat-mobile.png" alt="Кот до замены корма на Cat Energy Slim.">
-              </picture>
+              <p class="slider__image-wrapper before">
+                <picture>
+                  <source srcset="img/slider/cat-fat.png 1x, img/slider/cat-fat-2x.png 2x" media="(min-width: 768px)">
+                  <img class="image" src="img/slider/cat-fat-mobile.png" srcset="img/slider/cat-fat-mobile-2x.png 2x" alt="Кот до замены корма на Cat Energy Slim.">
+                </picture>
+              </p>
             </div>
             <div class="slider__slide slider__slide--after">
-              <picture class="slider__image-wrapper after">
-                <source srcset="img/slider/cat-normal.png" media="(min-width: 768px)">
-                <img class="image" src="img/slider/cat-normal-mobile.png" alt="Кот после замены корма на Cat Energy Slim.">
-              </picture>
+              <p class="slider__image-wrapper after">
+                <picture>
+                  <source srcset="img/slider/cat-normal.png 1x, img/slider/cat-normal-2x.png 2x" media="(min-width: 768px)">
+                  <img class="image" src="img/slider/cat-normal-mobile.png" srcset="img/slider/cat-normal-mobile-2x.png 2x" alt="Кот после замены корма на Cat Energy Slim.">
+                </picture>
+              </p>
             </div>
             <div class="slider__change">
               <svg class="slider__icon icon" aria-hidden="true" focusable="false" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
