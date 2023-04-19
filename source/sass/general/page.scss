@@ -25,12 +25,42 @@
   margin-bottom: 30px;
 }
 
+.page__main--index {
+  background: linear-gradient(rgba(104, 183, 56, 0.85) 302px, $background-color-main 302px, $background-color-main 90%);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    width: 100%;
+    height: 302px;
+    background-image: url("../img/index-bg-mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .page__main--index::before {
+    background-image: url("../img/index-bg-mobile-2x.jpg");
+  }
+}
+
 @media (min-width: $tablet) {
   .page__main {
     padding-top: 36px;
 
     &--index {
       padding-top: 38px;
+      background: none;
+
+      &::before {
+        display: none;
+      }
     }
   }
 
