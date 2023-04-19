@@ -99,6 +99,10 @@
   &--custom {
     margin-bottom: 38px;
   }
+
+  &--contact {
+    width: 185px;
+  }
 }
 
 .filter__title-wrapper::before {
@@ -349,6 +353,10 @@
 
     &--add {
       margin-bottom: 55px;
+    }
+
+    &--contact {
+      width: unset;
     }
   }
 

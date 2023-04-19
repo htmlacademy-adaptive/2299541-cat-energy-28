@@ -2,6 +2,7 @@
   color: $text-color-additional;
   padding-top: 27px;
   margin-bottom: 40px;
+  padding-left: 20px;
 }
 
 .catalog__items {
@@ -12,6 +13,11 @@
   flex-wrap: wrap;
   gap: 0 20px;
   justify-content: center;
+}
+
+.catalog__container {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (min-width: 768px) {
@@ -29,6 +35,7 @@
 
   .catalog__title {
     margin-bottom: 163px;
+    padding-left: 0;
   }
 }
 
