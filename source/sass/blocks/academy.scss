@@ -19,7 +19,7 @@
 
   &:hover,
   &:focus {
-    .academy__icon path {
+    .academy__icon {
       fill: $background-color-accent;
     }
   }
@@ -27,7 +27,7 @@
   &:active {
     opacity: 0.3;
 
-    .academy__icon path {
+    .academy__icon {
       fill: $background-color-accent;
     }
   }
