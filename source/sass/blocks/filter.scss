@@ -247,8 +247,9 @@
     border: 1px solid $border-color-hover;
     box-shadow: 1px 1px 0 $border-color-hover, -1px -1px 0 $border-color-hover, -1px 1px 0 $border-color-hover, 1px -1px 0 $border-color-hover;
 
-    & + .filter__icon path {
+    & + .filter__icon {
       stroke: $background-color-accent;
+      fill: $background-color-accent;
     }
   }
 
@@ -256,8 +257,9 @@
     border: 1px solid $error-color;
     box-shadow: unset;
 
-    & + .filter__icon path {
+    & + .filter__icon {
       stroke: $error-color;
+      fill: $error-color;
     }
   }
 
@@ -265,8 +267,9 @@
     border: 1px solid $error-color;
     box-shadow: 1px 1px 0 $error-color, -1px -1px 0 $error-color, -1px 1px 0 $error-color, 1px -1px 0 $error-color;
 
-    & + .filter__icon path {
+    & + .filter__icon {
       stroke: $error-color;
+      fill: $error-color;
     }
   }
 }
