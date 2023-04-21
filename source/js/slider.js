@@ -3,7 +3,6 @@ const slider = document.querySelector('.slider'),
   beforeImg = slider.querySelector('.slider__image-wrapper'),
   change = slider.querySelector('.slider__change'),
   body = document.body;
-
 let isActive = false;
 
 document.addEventListener('DOMContentLoaded' , () => {
@@ -24,7 +23,7 @@ const pauseEvents = (e) => {
 };
 
 change.addEventListener('mousedown', () => {
-	isActive = true;
+  isActive = true;
 });
 
 body.addEventListener('mouseup', () => {
@@ -39,35 +38,33 @@ body.addEventListener('mousemove', (e) => {
   if(!isActive) {
     return;
   }
-
   let x = e.pageX;//значение координат мышки
-
   x -= slider.getBoundingClientRect().left;//убираем лишнюю область
   beforeAfterSlider(x);
 });
 
 change.addEventListener('touchstart', () => {
-	isActive = true;
+  isActive = true;
 });
 
 body.addEventListener('touchend', () => {
-	isActive = false;
+  isActive = false;
 });
 
 body.addEventListener('touchcancel', () => {
-	isActive = false;
+  isActive = false;
 });
 
 body.addEventListener('touchmove', (e) => {
-	if (!isActive) {
-		return;
-	}
+  if (!isActive) {
+    return;
+  }
 
   let x;
 
   let i;
   for (i = 0; i < e.changedTouches.length; i++) {
-  	x = e.changedTouches[i].pageX;
+    x = e.changedTouches[i].pageX;
   }
 
   x -= slider.getBoundingClientRect().left;
