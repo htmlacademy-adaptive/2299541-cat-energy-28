@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
@@ -60,7 +60,7 @@
         <section class="catalogs-list__item catalog-list">
           <div class="catalog-list__icon-wrapper">
             <svg class="catalog-list__icon icon" aria-hidden="true" focusable="false" width="36" height="50">
-              <use href="img/sprite.svg#icon-slim"></use>
+              <use href="img/sprite.svg#cat-slim"></use>
             </svg>
           </div>
           <h2 class="title title--h3 catalog-list__title">похудение</h2>
@@ -70,7 +70,7 @@
         <section class="catalogs-list__item catalog-list">
           <div class="catalog-list__icon-wrapper">
             <svg class="catalog-list__icon catalog-list__icon--pro icon" aria-hidden="true" focusable="false" width="67" height="28">
-              <use href="img/sprite.svg#icon-pro"></use>
+              <use href="img/sprite.svg#cat-pro"></use>
             </svg>
           </div>
           <h2 class="title title--h3 catalog-list__title">Набор массы</h2>
@@ -114,6 +114,8 @@
             <div class="slider__slide slider__slide--before">
               <p class="slider__image-wrapper before">
                 <picture>
+                  <source type="image/webp" srcset="img/slider/cat-fat.webp 1x, img/slider/cat-fat-2x.webp 2x" media="(min-width: 768px)">
+                  <source type="image/webp" srcset="img/slider/cat-fat-mobile.webp 1x, img/slider/cat-fat-mobile-2x.webp 2x">
                   <source srcset="img/slider/cat-fat.png 1x, img/slider/cat-fat-2x.png 2x" media="(min-width: 768px)">
                   <img class="image" src="img/slider/cat-fat-mobile.png" srcset="img/slider/cat-fat-mobile-2x.png 2x" alt="Кот до замены корма на Cat Energy Slim.">
                 </picture>
@@ -122,6 +124,8 @@
             <div class="slider__slide slider__slide--after">
               <p class="slider__image-wrapper after">
                 <picture>
+                  <source type="image/webp" srcset="img/slider/cat-normal.webp 1x, img/slider/cat-normal-2x.webp 2x" media="(min-width: 768px)">
+                  <source type="image/webp" srcset="img/slider/cat-normal-mobile.webp 1x, img/slider/cat-normal-mobile-2x.webp 2x">
                   <source srcset="img/slider/cat-normal.png 1x, img/slider/cat-normal-2x.png 2x" media="(min-width: 768px)">
                   <img class="image" src="img/slider/cat-normal-mobile.png" srcset="img/slider/cat-normal-mobile-2x.png 2x" alt="Кот после замены корма на Cat Energy Slim.">
                 </picture>
@@ -129,7 +133,7 @@
             </div>
             <div class="slider__change">
               <svg class="slider__icon icon" aria-hidden="true" focusable="false" width="40" height="40" fill="#666666" stroke="#666666">
-                <use href="img/sprite.svg#icon-slider"></use>
+                <use href="img/sprite.svg#icon-thumb"></use>
               </svg>
             </div>
           </div>
@@ -175,7 +179,7 @@
               <a class="social__link" href="https://vk.com/htmlacademy" target="_blank">
                 <span class="visually-hidden">Ссылка на Вконтакте</span>
                 <svg class="social__icon icon" aria-hidden="true" focusable="false" width="29" height="22" fill="#666666">
-                  <use href="img/sprite.svg#icon-vk"></use>
+                  <use href="img/sprite.svg#icon-vkontakte"></use>
                 </svg>
               </a>
             </li>
@@ -191,7 +195,7 @@
               <a class="social__link" href="https://t.me/htmlacademy" target="_blank">
                 <span class="visually-hidden">Ссылка на телеграм</span>
                 <svg class="social__icon icon" aria-hidden="true" focusable="false" width="29" height="22" fill="#666666">
-                  <use href="img/sprite.svg#icon-tg"></use>
+                  <use href="img/sprite.svg#icon-telegram"></use>
                 </svg>
               </a>
             </li>
@@ -199,7 +203,7 @@
           <div class="footer__academy academy container">
             <a class="link academy__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy
               <svg class="academy__icon" aria-hidden="true" focusable="false" width="27" height="34" fill="#666666">
-                <use href="img/sprite.svg#icon-academy"></use>
+                <use href="img/sprite.svg#logo-academy"></use>
               </svg>
             </a>
           </div>
