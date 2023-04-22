@@ -49,7 +49,7 @@
     top: 0;
     right: 0;
     left: auto;
-    gap: 38px;
+    gap: 36px;
     background-color: transparent;
   }
 
@@ -62,17 +62,16 @@
     line-height: 1.33;
     padding: 9px 0 6px;
     text-align: right;
-    letter-spacing: -0.6px;
     border: none;
     font-weight: 400;
   }
 }
 
-@media (min-width: $dekstop) {
+@media (min-width: $desktop) {
   .menu__link {
     font-size: 20px;
     line-height: 1.45;
-    padding: 13px 0 8px;
+    padding: 16px 0 5px;
   }
 
   .menu {

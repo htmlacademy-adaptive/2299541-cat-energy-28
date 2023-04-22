@@ -42,7 +42,7 @@
   }
 }
 
-@media (min-width: $dekstop) {
+@media (min-width: $desktop) {
   .form {
     padding-top: 21px;
   }
@@ -56,5 +56,9 @@
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 83px;
+  }
+
+  .form__text {
+    margin-bottom: 67px;
   }
 }

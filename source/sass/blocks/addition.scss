@@ -80,7 +80,7 @@
   }
 }
 
-@media (min-width: $dekstop) {
+@media (min-width: $desktop) {
   .addition {
     display: flex;
     flex-direction: row;
@@ -88,7 +88,7 @@
     align-items: center;
     border-left: none;
     border-right: none;
-    padding: 17px 0 14px 0;
+    padding: 16px 0 15px 0;
   }
 
   .addition__button {

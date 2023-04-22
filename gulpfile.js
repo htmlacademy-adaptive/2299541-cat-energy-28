@@ -6,6 +6,7 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import htmlmin from 'gulp-htmlmin';
+import jsmin from 'gulp-jsmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh'
 import svgo from 'gulp-svgmin';
@@ -37,6 +38,8 @@ const html = () => {
 //scripts
 const scripts = () => {
   return gulp.src('source/js/*.js')
+    .pipe(jsmin())
+    .pipe(rename({suffix: '.min'}))
     .pipe(terser())
     .pipe(gulp.dest('build/js'))
 }

@@ -26,7 +26,7 @@
 }
 
 .page__main--index {
-  background: linear-gradient(rgba(104, 183, 56, 0.85) 302px, $background-color-main 302px, $background-color-main 90%);
+  background: linear-gradient(rgba(104, 183, 56, 0.85) 301px, $background-color-main 301px, $background-color-main 90%);
   position: relative;
 
   &::before {
@@ -93,7 +93,7 @@
   }
 }
 
-@media (min-width: $dekstop) {
+@media (min-width: $desktop) {
   .page__main {
     padding-top: 52px;
 
@@ -164,9 +164,9 @@
     margin-right: auto;
 
     &--form {
-      margin-bottom: 69px;
+      margin-bottom: 67px;
       flex-wrap: wrap;
-      gap: 30px 79px;
+      gap: 30px 81px;
     }
   }
 

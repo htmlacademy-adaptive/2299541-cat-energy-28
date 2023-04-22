@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/oswald/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
@@ -117,7 +120,7 @@
                   <source type="image/webp" srcset="img/slider/cat-fat.webp 1x, img/slider/cat-fat-2x.webp 2x" media="(min-width: 768px)">
                   <source type="image/webp" srcset="img/slider/cat-fat-mobile.webp 1x, img/slider/cat-fat-mobile-2x.webp 2x">
                   <source srcset="img/slider/cat-fat.png 1x, img/slider/cat-fat-2x.png 2x" media="(min-width: 768px)">
-                  <img class="image" src="img/slider/cat-fat-mobile.png" srcset="img/slider/cat-fat-mobile-2x.png 2x" alt="Кот до замены корма на Cat Energy Slim.">
+                  <img class="image" src="img/slider/cat-fat-mobile.png" srcset="img/slider/cat-fat-mobile-2x.png 2x" alt="Кот до замены корма на Cat Energy Slim." lazyload="lazy">
                 </picture>
               </p>
             </div>
@@ -127,7 +130,7 @@
                   <source type="image/webp" srcset="img/slider/cat-normal.webp 1x, img/slider/cat-normal-2x.webp 2x" media="(min-width: 768px)">
                   <source type="image/webp" srcset="img/slider/cat-normal-mobile.webp 1x, img/slider/cat-normal-mobile-2x.webp 2x">
                   <source srcset="img/slider/cat-normal.png 1x, img/slider/cat-normal-2x.png 2x" media="(min-width: 768px)">
-                  <img class="image" src="img/slider/cat-normal-mobile.png" srcset="img/slider/cat-normal-mobile-2x.png 2x" alt="Кот после замены корма на Cat Energy Slim.">
+                  <img class="image" src="img/slider/cat-normal-mobile.png" srcset="img/slider/cat-normal-mobile-2x.png 2x" alt="Кот после замены корма на Cat Energy Slim." lazyload="lazy">
                 </picture>
               </p>
             </div>
@@ -170,7 +173,7 @@
             <p class="footer__picture">
               <picture>
                 <source srcset="img/icons/footer-logo-tablet.svg" media="(min-width: 768px)">
-                  <img class="footer__image" src="img/icons/footer-logo-mobile.svg" alt="Магазин «Кэт энерджи»">
+                  <img class="footer__image" src="img/icons/footer-logo-mobile.svg" alt="Магазин «Кэт энерджи»" lazyload="lazy">
               </picture>
             </p>
           </a>
@@ -210,7 +213,7 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/slider.min.js"></script>
   </body>
 </html>

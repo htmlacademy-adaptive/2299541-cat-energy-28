@@ -105,7 +105,7 @@
   }
 }
 
-@media (min-width: $dekstop) {
+@media (min-width: $desktop) {
   .slider__slide {
     background-image: linear-gradient($background-color-main 135px, $background-color-special 135px, $background-color-special 90%);
   }
