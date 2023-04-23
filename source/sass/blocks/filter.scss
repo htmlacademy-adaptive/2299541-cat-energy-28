@@ -367,6 +367,10 @@
     &::before {
       top: 21%;
     }
+
+    &--add::before {
+      top: 25%;
+    }
   }
 
   .filter__textarea {
@@ -453,15 +457,17 @@
   }
 }
 
-@media (min-width: $dekstop) {
+@media (min-width: $desktop) {
   .filter__group {
     display: flex;
     margin-bottom: 0;
+    width: 570px;
 
     &--add {
       margin-top: 60px;
       margin-bottom: 56px;
       flex-direction: column;
+      width: 100%;
     }
   }
 
@@ -504,15 +510,21 @@
 
   .filter__input[type="email"] {
     padding-right: 40px;
-    min-width: 486px;
+    min-width: 482px;
   }
 
   .filter__input[type="tel"] {
     padding-right: 40px;
-    min-width: 467px;
+    min-width: 463px;
   }
 
   .filter__icon {
-    right: 21px;
+    right: 16px;
+  }
+
+  .filter__title-wrapper--add {
+    &::before {
+      top: 26%;
+    }
   }
 }

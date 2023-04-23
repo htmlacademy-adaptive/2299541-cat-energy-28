@@ -1,6 +1,6 @@
 .live-example {
   background-color: $background-color-additional;
-  padding-top: 25px;
+  padding-top: 26px;
   padding-bottom: 41px;
 }
 
@@ -9,13 +9,13 @@
 }
 
 .live-example__text {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .live-example__blocks {
   display: flex;
   gap: 0 32px;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 }
 
 .live-example__block {
@@ -23,7 +23,7 @@
   max-width: 124px;
   border: 1px solid $border-color;
   border-radius: 3px;
-  padding: 6px 6px 12px;
+  padding: 7px 6px 11px;
   position: relative;
   text-align: center;
 }
@@ -134,7 +134,7 @@
   }
 }
 
-@media (min-width: $dekstop) {
+@media (min-width: $desktop) {
   .live-example {
     padding-top: 0;
     padding-bottom: 68px;

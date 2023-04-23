@@ -14,8 +14,8 @@
 }
 
 .footer__logo {
-  padding-top: 36px;
-  padding-bottom: 19px;
+  padding-top: 35px;
+  padding-bottom: 14px;
 
   &:hover,
   &:focus {
@@ -29,6 +29,8 @@
 
 .footer__picture {
   display: block;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 768px) {
@@ -43,7 +45,7 @@
   }
 }
 
-@media (min-width: $dekstop) {
+@media (min-width: $desktop) {
   .footer__parthership {
     z-index: 1;
     background-color: $background-color-main;
