@@ -158,6 +158,10 @@
   align-items: center;
   justify-content: center;
   min-width: 30px;
+
+  &:focus {
+    border-color: $border-color-accent;
+  }
 }
 
 .filter__mark {
@@ -289,6 +293,14 @@
 .filter__input-with-icon {
   position: relative;
   width: 95%;
+}
+
+.filter__control:focus-within .filter__radio + .filter__mark-radio {
+  border-color: $border-color-accent;
+}
+
+.filter__control:focus-within .filter__checkbox + .filter__mark {
+  border-color: $border-color-accent;
 }
 
 @media (min-width: $tablet) {
