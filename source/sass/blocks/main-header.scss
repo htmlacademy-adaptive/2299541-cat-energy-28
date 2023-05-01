@@ -26,6 +26,22 @@
   }
 }
 
+.main-header--no-js { //модификатор для меню без js
+  .main-header__container {
+    flex-direction: column;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    position: relative;
+    top: 0;
+  }
+}
+
 @media (min-width: $tablet) {
   .main-header {
     border-bottom: none;
@@ -40,6 +56,16 @@
   .main-header__picture {
     width: 174px;
     height: 52px;
+  }
+
+  .main-header--no-js {
+    .main-header__container {
+      flex-direction: row;
+    }
+
+    .menu {
+      display: flex;
+    }
   }
 }
 
