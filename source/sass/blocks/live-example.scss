@@ -1,7 +1,7 @@
 .live-example {
   background-color: $background-color-additional;
   padding-top: 26px;
-  padding-bottom: 41px;
+  padding-bottom: 39px;
 }
 
 .live-example__title {
@@ -23,7 +23,7 @@
   max-width: 124px;
   border: 1px solid $border-color;
   border-radius: 3px;
-  padding: 7px 6px 11px;
+  padding: 13px 6px 17px;
   position: relative;
   text-align: center;
 }
@@ -50,6 +50,7 @@
   color: $text-color-additional;
   display: block;
   margin-bottom: 20px;
+  line-height: 20px;
 }
 
 .live-example__slider {
@@ -58,12 +59,16 @@
   width: 100vw;
 }
 
+.live-example__subtitle {
+  line-height: 1;
+}
+
 @media (min-width: $tablet) {
   .live-example {
     padding-top: 43px;
-    padding-bottom: 100px;
+    padding-bottom: 101px;
     position: relative;
-    background: linear-gradient($background-color-main 620px, $background-color-additional 620px, $background-color-additional 90%);
+    background: linear-gradient($background-color-main 80%, $background-color-additional 80%, $background-color-additional 90%);
     border-top: 1px solid $background-color-additional;
   }
 
@@ -97,8 +102,8 @@
   }
 
   .live-example__block {
-    max-width: 164px;
-    padding: 16px;
+    max-width: 163px;
+    padding: 15px 15px 18px 16px;
   }
 
   .live-example__description {
@@ -114,7 +119,7 @@
 
   .live-example__subtitle {
     font-size: 30px;
-    line-height: 1.23;
+    line-height: 37px;
   }
 
   .live-example__result {
@@ -122,22 +127,28 @@
     grid-column: 2;
     text-align: right;
     font-size: 20px;
-    line-height: 1.4;
+    line-height: 1;
     width: 174px;
-    margin-top: 8px;
+    margin-top: 12px;
     margin-left: auto;
     margin-bottom: 0;
+
+    &--add {
+      display: block;
+      margin-top: 8px;
+    }
   }
 
   .live-example__slider {
-    margin-top: 103px;
+    margin-top: 102px;
+    background-image: linear-gradient($background-color-main 153px, $background-color-additional 153px, $background-color-additional 90%);
   }
 }
 
 @media (min-width: $desktop) {
   .live-example {
     padding-top: 0;
-    padding-bottom: 68px;
+    padding-bottom: 73px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -161,15 +172,15 @@
   }
 
   .live-example__text {
-    margin: 70px 0;
+    margin: 70px 0 69px;
     max-width: 433px;
   }
 
   .live-example__slider {
     position: absolute;
     width: 560px;
-    left: 52%;
-    top: 7%;
+    left: 53.4%;
+    top: 45px;
     margin: 0;
   }
 
@@ -179,6 +190,11 @@
     display: flex;
     justify-content: space-between;
     width: 326px;
+    line-height: 1;
+
+    &--add {
+      width: unset;
+    }
   }
 
   .live-example__blocks {
@@ -187,7 +203,7 @@
 
   .live-example__block {
     width: 162px;
-    margin-bottom: 52px;
+    margin-bottom: 56px;
   }
 
   .live-example__description {

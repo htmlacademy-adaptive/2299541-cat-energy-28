@@ -1,6 +1,6 @@
 .addition {
   border-top: 1px solid $border-color-secondary;
-  padding-top: 12px;
+  padding-top: 15px;
   padding-bottom: 17px;
   display: flex;
   flex-direction: column;
@@ -12,11 +12,11 @@
 }
 
 .addition__name {
-  line-height: 1.25;
+  line-height: 1;
   color: $text-color-custom;
   text-transform: uppercase;
   font-weight: 400;
-  margin-bottom: 9px;
+  margin-bottom: 13px;
 }
 
 .addition__link {
@@ -32,7 +32,11 @@
 .addition__price {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
+}
+
+.addition__about {
+  line-height: 1;
 }
 
 @media (min-width: $tablet) {
@@ -73,6 +77,7 @@
 
   .addition__name {
     margin-bottom: 0;
+    line-height: 1;
   }
 
   .addition__about {

@@ -11,6 +11,10 @@
   }
 }
 
+.catalog-list__title {
+  line-height: 37px;
+}
+
 @media (min-width: $tablet) {
   .catalogs-list__item {
     margin-bottom: 33px;
@@ -22,6 +26,10 @@
 
   .catalog-list__icon-wrapper {
     margin-top: 14px;
+  }
+
+  .catalog-list__title {
+    line-height: 1;
   }
 }
 

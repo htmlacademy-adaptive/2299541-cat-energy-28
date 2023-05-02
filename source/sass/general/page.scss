@@ -18,7 +18,7 @@
 }
 
 .page__additionally {
-  margin-bottom: 36px;
+  margin-bottom: 35px;
 }
 
 .page__form {
@@ -69,7 +69,7 @@
   }
 
   .page__catalogs-list {
-    margin-bottom: 46px;
+    margin-bottom: 44px;
   }
 
   .page__how-work {
@@ -89,7 +89,11 @@
   }
 
   .page__form {
-    margin-bottom: 72px;
+    margin-bottom: 73px;
+  }
+
+  .page__wrapper--form {
+    padding-left: 2px;
   }
 }
 
@@ -145,7 +149,7 @@
   }
 
   .page__catalogs-list {
-    margin-bottom: 72px;
+    margin-bottom: 71px;
   }
 
   .page__how-work {
@@ -164,9 +168,10 @@
     margin-right: auto;
 
     &--form {
-      margin-bottom: 67px;
+      margin-bottom: 65px;
       flex-wrap: wrap;
       gap: 30px 81px;
+      padding-left: 0;
     }
   }
 

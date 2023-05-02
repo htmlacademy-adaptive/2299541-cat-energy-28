@@ -111,12 +111,13 @@
 .filter__text {
   text-align: center;
   color: $text-color-additional;
+  line-height: 16px;
 }
 
 .filter__button {
   font-size: 16px;
   line-height: 1.25;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 }
 
 .filter__input-wrapper {
@@ -305,7 +306,7 @@
 @media (min-width: $tablet) {
   .filter__label {
     font-size: 20px;
-    line-height: 1.45;
+    line-height: 29.64px;
   }
 
   .filter__input-wrapper {
@@ -318,10 +319,10 @@
 
   .filter__input {
     font-size: 20px;
-    line-height: 1.45;
+    line-height: 29.64px;
     padding-top: 11px;
-    padding-bottom: 10px;
-    margin-left: 14px;
+    padding-bottom: 9px;
+    margin-left: 13px;
     outline: none;
 
     &--custom {
@@ -335,7 +336,7 @@
 
   .filter__group {
     border: 1px solid $border-color-additional;
-    padding: 24px 29px;
+    padding: 25px 27px;
     margin-bottom: 73px;
 
     &--add {
@@ -395,7 +396,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 32px 121px;
+    gap: 32px 123px;
   }
 
   .filter__item--add {
@@ -418,7 +419,7 @@
 
   .filter__control-label {
     font-size: 20px;
-    line-height: 1.45;
+    line-height: 29.64px;
   }
 
   .filter__mark-radio {
@@ -431,7 +432,7 @@
   .filter__mark {
     width: 40px;
     height: 40px;
-    margin-right: 22px;
+    margin-right: 21px;
     min-width: 40px;
   }
 
@@ -465,6 +466,10 @@
 
   .filter__input-with-icon {
     width: 96%;
+  }
+
+  .filter__text {
+    line-height: 1;
   }
 }
 

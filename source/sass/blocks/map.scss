@@ -1,21 +1,11 @@
 .map {
   width: 100%;
   position: relative;
-
-  &::after {
-    content: "";
-    display: block;
-    background-image: url("../img/map-icon-mobile.png");
-    position: absolute;
-    margin: auto;
-    width: 57px;
-    height: 53px;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    transform: translate(-50%, -50%);
-    background-size: contain;
-  }
+  background-image: url("../img/location-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  height: 367px;
 }
 
 .map__iframe {
@@ -25,27 +15,36 @@
 }
 
 @media (min-resolution: 2dppx) {
-  .map::after {
-    background-image: url("../img/map-icon-mobile-2x.png");
+  .map {
+    background-image: url("../img/location-mobile-2x.jpg");
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .map__iframe {
     height: 400px;
   }
 
   .map {
-    &::after {
-      background-image: url("../img/map-icon-tablet.png");
-      width: 113px;
-      height: 106px;
-    }
+    background-image: url("../img/location-tablet.jpg");
+    height: 400px;
   }
 
   @media (min-resolution: 2dppx) {
-    .map::after {
-      background-image: url("../img/map-icon-tablet-2x.png");
+    .map {
+      background-image: url("../img/location-tablet-2x.jpg");
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .map {
+    background-image: url("../img/location.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .map {
+      background-image: url("../img/location-2x.jpg");
     }
   }
 }
