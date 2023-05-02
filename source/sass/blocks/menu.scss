@@ -16,6 +16,12 @@
     display: flex;
     z-index: 2;
   }
+
+  .main-header--no-js & {
+    display: block;
+    position: relative;
+    top: 0;
+  }
 }
 
 .menu__link {
@@ -49,8 +55,13 @@
     top: 0;
     right: 0;
     left: auto;
-    gap: 36px;
+    gap: 10px 34px;
     background-color: transparent;
+    max-width: 500px;
+
+    .main-header--no-js & {
+      display: flex;
+    }
   }
 
   .menu__item--active {
@@ -75,7 +86,7 @@
   }
 
   .menu {
-    gap: 35px;
+    gap: 10px 35px;
 
     &--light {
       color: $text-color-accent;

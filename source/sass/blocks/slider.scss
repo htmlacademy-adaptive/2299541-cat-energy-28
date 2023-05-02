@@ -99,14 +99,12 @@
   }
 }
 
-@media (min-width: 868px) {
-  .slider__slide {
-    background-image: linear-gradient($background-color-main 177px, $background-color-additional 177px, $background-color-additional 90%);
-  }
-}
-
 @media (min-width: $desktop) {
   .slider__slide {
     background-image: linear-gradient($background-color-main 135px, $background-color-special 135px, $background-color-special 90%);
+  }
+
+  .slider {
+    padding: 0;
   }
 }
