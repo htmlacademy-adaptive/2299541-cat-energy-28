@@ -44,6 +44,10 @@
   }
 }
 
+.page__catalog {
+  margin-bottom: 6px;
+}
+
 @media (min-resolution: 2dppx) {
   .page__main--index::before {
     background-image: url("../img/index-bg-mobile-2x.jpg");
@@ -168,7 +172,7 @@
     margin-right: auto;
 
     &--form {
-      margin-bottom: 65px;
+      margin-bottom: 67px;
       flex-wrap: wrap;
       gap: 30px 81px;
       padding-left: 0;

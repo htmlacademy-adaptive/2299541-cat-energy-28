@@ -25,7 +25,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 26px;
-  padding-top: 22px;
+  padding-top: 23px;
   padding-bottom: 18px;
   border-top: 1px solid $border-color-additional;
   border-bottom: 1px solid $border-color-additional;
@@ -49,7 +49,7 @@
   &--add {
     border: none;
     padding: 0;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
 }
 
@@ -89,7 +89,7 @@
 }
 
 .filter__title {
-  line-height: 1.1;
+  line-height: 26px;
   margin-bottom: 35px;
   box-shadow: -20px 0 0 $background-color-main, 22px 0 0 $background-color-main;
   background-color: $background-color-main;
@@ -306,7 +306,7 @@
 @media (min-width: $tablet) {
   .filter__label {
     font-size: 20px;
-    line-height: 29.64px;
+    line-height: 30px;
   }
 
   .filter__input-wrapper {
@@ -319,7 +319,7 @@
 
   .filter__input {
     font-size: 20px;
-    line-height: 29.64px;
+    line-height: 30px;
     padding-top: 11px;
     padding-bottom: 9px;
     margin-left: 13px;
@@ -359,15 +359,16 @@
   }
 
   .filter__title {
-    margin-bottom: 74px;
+    margin-bottom: 76px;
     box-shadow: -40px 0 0 $background-color-main, 40px 0 0 $background-color-main;
+    line-height: 1;
 
     &--custom {
-      margin-bottom: 75px;
+      margin-bottom: 79px;
     }
 
     &--add {
-      margin-bottom: 55px;
+      margin-bottom: 58px;
     }
 
     &--contact {
@@ -414,12 +415,11 @@
   .filter__button-wrapper {
     display: flex;
     flex-direction: row;
-    align-items: center;
   }
 
   .filter__control-label {
     font-size: 20px;
-    line-height: 29.64px;
+    line-height: 30px;
   }
 
   .filter__mark-radio {
@@ -470,6 +470,7 @@
 
   .filter__text {
     line-height: 1;
+    margin-top: 14px;
   }
 }
 
@@ -480,8 +481,8 @@
     width: 570px;
 
     &--add {
-      margin-top: 60px;
-      margin-bottom: 56px;
+      margin-top: 62px;
+      margin-bottom: 54px;
       flex-direction: column;
       width: 100%;
     }
@@ -492,7 +493,7 @@
     padding-bottom: 0;
 
     &--custom {
-      margin-bottom: 45px;
+      margin-bottom: 47px;
     }
 
     &--first {
@@ -512,7 +513,7 @@
   }
 
   .filter__title--add {
-    margin-bottom: 55px;
+    margin-bottom: 57px;
   }
 
   .filter__items--add {
@@ -542,5 +543,9 @@
     &::before {
       top: 26%;
     }
+  }
+
+  .filter__title--custom {
+    margin-bottom: 76px;
   }
 }

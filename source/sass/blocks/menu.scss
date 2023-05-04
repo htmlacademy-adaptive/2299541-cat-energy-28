@@ -16,12 +16,12 @@
     display: flex;
     z-index: 2;
   }
+}
 
-  .main-header--no-js & {
-    display: block;
-    position: relative;
-    top: 0;
-  }
+.menu--no-js {
+  display: block;
+  position: relative;
+  top: 0;
 }
 
 .menu__link {
@@ -55,13 +55,13 @@
     top: 0;
     right: 0;
     left: auto;
-    gap: 10px 34px;
+    gap: 10px 36px;
     background-color: transparent;
     max-width: 500px;
+  }
 
-    .main-header--no-js & {
-      display: flex;
-    }
+  .menu--no-js {
+    display: flex;
   }
 
   .menu__item--active {
@@ -70,8 +70,8 @@
 
   .menu__link {
     font-size: 18px;
-    line-height: 1.33;
-    padding: 9px 0 6px;
+    line-height: 24px;
+    padding: 9px 0;
     text-align: right;
     border: none;
     font-weight: 400;

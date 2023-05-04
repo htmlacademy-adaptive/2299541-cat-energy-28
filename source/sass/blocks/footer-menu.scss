@@ -11,7 +11,7 @@
   .footer-menu {
     flex-direction: row;
     max-width: 1220px;
-    padding: 49px 30px;
+    padding: 53px 30px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -19,6 +19,6 @@
 
 @media (min-width: $desktop) {
   .footer-menu {
-    padding: 63px 0;
+    padding: 68px 0;
   }
 }

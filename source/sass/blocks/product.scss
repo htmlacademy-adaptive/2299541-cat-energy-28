@@ -59,7 +59,7 @@
   &--more {
     text-align: center;
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     max-width: unset;
     color: $text-color-secondary;
 
@@ -70,7 +70,7 @@
       width: 30px;
       height: 30px;
       display: block;
-      margin: 0 auto 23px;
+      margin: 0 auto 22px;
     }
   }
 }
@@ -117,7 +117,8 @@
     &--more {
       background-color: $background-color-main;
       border: 1px solid $border-color-more;
-      padding-top: 56px;
+      padding-top: 54px;
+      padding-bottom: 37px;
     }
   }
 
@@ -183,7 +184,6 @@
   }
 
   .product__text--more {
-    line-height: 1.12;
     max-width: 165px;
   }
 }
