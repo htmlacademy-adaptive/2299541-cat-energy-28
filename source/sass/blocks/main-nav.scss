@@ -34,10 +34,10 @@
       transform: translateY(9px) rotate(45deg);
     }
   }
+}
 
-  .main-header--no-js & {
-    display: none;
-  }
+.main-nav__toggle--no-js {
+  display: none;
 }
 
 @media (min-width: $tablet) {
